@@ -1,11 +1,15 @@
 # TITULO DO PROJETO
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Lucca Favilla Campos de Paula, lfcpaula@sga.pucminas.br**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**Caio Soares Fernandes, caio.fernandes.925312@sga.pucminas.br**
 
-**Nome completo do Aluno 3, email do aluno 3**
+**Davi Miguel Almeida da Silva, davi.miguel@sga.pucminas.br**
+
+**Pedro Veloso Discacciati Neves, pedro.discacciati@sga.pucminas.br**
+
+**João Lucas Garcia Oliveira, email do aluno 3**
 
 ---
 
