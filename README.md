@@ -11,7 +11,7 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando qu
 * João Lucas Garcia Oliveira
 ## Professor 
 
-* Nome completo do professor (Prof. Hugo Bastos de Paula)
+* Prof. Hugo Bastos de Paula
 
 ## Instruções de utilização
 
