@@ -107,14 +107,27 @@ Além disso, o projeto contribui para o debate sobre a relevância de políticas
 
 ##    Público alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. 
-O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários 
-na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos 
-usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade racial no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar dados e tecnologia para combater desigualdades e fomentar a inclusão.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
-diagramas de personas e mapa de stakeholders.
+Diagrama de Persona
+Nome: Ana Paula Silva
+Gênero: Feminino
+Idade: 35
+Cidade: São Paulo
+
+Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de equidade racial e de gênero na empresa.
+
+Objetivos:
+
+Promover a diversidade e a inclusão dentro da empresa.
+
+Reduzir as disparidades salariais entre grupos raciais.
+
+Problemas:
+
+Dificuldade em identificar as causas das desigualdades raciais na empresa.
+
+Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
