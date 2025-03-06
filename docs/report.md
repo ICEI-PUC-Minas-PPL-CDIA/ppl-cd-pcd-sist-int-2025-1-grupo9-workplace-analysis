@@ -1,4 +1,4 @@
-# TITULO DO PROJETO
+# Racial Equity in the Brazilian Workplace Analysis
 
 
 **Lucca Favilla Campos de Paula, lfcpaula@sga.pucminas.br**
@@ -9,13 +9,16 @@
 
 **Pedro Veloso Discacciati Neves, pedro.discacciati@sga.pucminas.br**
 
-**João Lucas Garcia Oliveira, email do aluno 3**
+**João Lucas Garcia Oliveira, joao.oliveira.1387367@sga.pucminas.br**
+
+**Gabriel Lucas de Carvalho Santos, gabriel.santos1524775@sga.pucminas.br**
+
 
 ---
 
 Professores:
 
-** Prof. Nome do Prof 1 **
+** Prof. Hugo Bastos de Paula **
 ** Prof. Nome do Prof 2 **
 
 ---
