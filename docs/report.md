@@ -1,4 +1,4 @@
-# Racial Equity in the Brazilian Workplace Analysis
+# Brazilian Workplace Analysis
 
 
 **Lucca Favilla Campos de Paula, lfcpaula@sga.pucminas.br**
@@ -29,15 +29,27 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+_**Resumo**. 
+O projeto Brazilian Workplace Analysis tem como foco combater as desigualdades raciais no mercado de trabalho, utilizando tecnologias de inteligência artificial para analisar e interpretar dados socioeconômicos e laborais. O sistema busca identificar desafios enfrentados por trabalhadores pardos, negros e indígenas, como disparidades salariais, falta de acesso a cargos de liderança e barreiras à inclusão. O objetivo principal é criar uma plataforma que processe grandes volumes de dados, gerando insights e recomendações para empresas e gestores públicos, com o intuito de fomentar práticas mais justas e inclusivas.
+
+A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (Ministério do Trabalho) e estudos acadêmicos, aplicando técnicas de machine learning para detectar padrões e propor ações efetivas, como políticas de diversidade e programas de capacitação. O público-alvo inclui organizações privadas, governos, pesquisadores e entidades da sociedade civil.
+
+Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades raciais no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada._
 
 ---
 
 
 ## Introdução
 
-A introdução deve apresentar de dois a quatro parágrafos de contextualização do trabalho. 
+A desigualdade racial no mercado de trabalho brasileiro é um desafio histórico e estrutural, que persiste mesmo diante dos avanços nas políticas de inclusão e diversidade. Trabalhadores pardos, negros e indígenas continuam enfrentando barreiras significativas, como acesso limitado a empregos formais, disparidades salariais e sub-representação em cargos de liderança. Essas desigualdades não apenas refletem as dinâmicas sociais do país, mas também impactam negativamente a economia e a coesão social, perpetuando ciclos de exclusão e marginalização.
+
+Diante desse cenário, a tecnologia surge como uma ferramenta poderosa para compreender e combater essas disparidades. A inteligência artificial e a análise de dados oferecem a possibilidade de mapear padrões de desigualdade, identificar pontos críticos e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis se propõe a desenvolver um sistema inteligente que centralize e analise dados socioeconômicos e laborais, com foco na integração de trabalhadores pardos, negros e indígenas, visando promover ambientes de trabalho mais inclusivos e equitativos.
+
+O sistema utiliza técnicas avançadas de machine learning para processar informações de fontes confiáveis, como a PNAD Contínua (IBGE) e a Rais (Ministério do Trabalho), além de estudos acadêmicos e relatórios especializados. Ao identificar padrões de desigualdade e sugerir ações práticas, a plataforma busca ser uma ferramenta estratégica para empresas, gestores públicos e organizações da sociedade civil, contribuindo para a transformação do mercado de trabalho em um espaço mais justo e diverso.
+
+Neste contexto, o Brazilian Workplace Analysis representa um esforço inovador para unir tecnologia e justiça social, oferecendo soluções embasadas em dados para um dos desafios mais urgentes do Brasil contemporâneo. Ao combinar análise de dados, inteligência artificial e políticas de inclusão, o trabalho visa não apenas diagnosticar problemas, mas também apontar caminhos concretos para a construção de um futuro mais igualitário.
+
+ 
 
 ###    Contextualização
 
