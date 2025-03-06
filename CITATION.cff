@@ -2,10 +2,24 @@ cff-version: 1.0.1
 message: Por favor, cite o repositório utilizando estes metadados.
 title: Repositório modelo para a disciplina de Projeto em Ciência de Dados I - Sistemas Inteligentes.
 authors:
-   - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: de Paula
-    given-names: Hugo
+  - given-names: Lucca
+    family-names: Favilla Campos de Paula
+    affiliation: Puc Minas
+  - given-names: Caio
+    family-names: Soares Fernandes
+    affiliation: Puc Minas
+  - given-names: Davi
+    family-names: Miguel Almeida da Silva
+    affiliation: Puc Minas
+  - given-names: Pedro 
+    family-names: Veloso Discacciati Neves
+    affiliation: Puc Minas
+  - given-names: João 
+    family-names: Lucas Garcia Oliveira
+    affiliation: Puc Minas
+  - name: Puc Minas
+    city: Belo Horizinte
+    country: BR
 keywords:
   - Ciência de Dados
   - Jupyter Notebooks
