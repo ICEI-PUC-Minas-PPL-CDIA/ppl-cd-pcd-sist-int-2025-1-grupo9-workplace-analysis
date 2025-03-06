@@ -19,7 +19,7 @@
 Professores:
 
 ** Prof. Hugo Bastos de Paula **
-** Prof. Nome do Prof 2 **
+
 
 ---
 
