@@ -1,4 +1,4 @@
-# Trabalho e Equidade: Análise das Desigualdades Raciais no Ambiente Laboral Brasileiro
+# Brazilian Workplace Analysis
 
 O objetivo deste projeto é desenvolver um sistema inteligente de análise e monitoramento de diversidade e inclusão racial em ambientes laborais. O produto consiste em uma plataforma tecnológica que utiliza algoritmos de inteligência artificial e machine learning para processar dados socioeconômicos, demográficos e laborais, com foco em trabalhadores pardos, negros e indígenas. O sistema será capaz de identificar padrões de desigualdade, como disparidades salariais, acesso a cargos de liderança e representação em diferentes setores, além de fornecer insights personalizados para empresas e gestores públicos.
 
@@ -13,7 +13,7 @@ O objetivo deste projeto é desenvolver um sistema inteligente de análise e mon
   
 ## Professor 
 
-* Prof. Hugo Bastos de Paula
+**Prof. Hugo Bastos de Paula**
 
 ## Instruções de utilização
 
