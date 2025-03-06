@@ -18,7 +18,7 @@
 
 Professores:
 
-** Prof. Hugo Bastos de Paula **
+**Prof. Hugo Bastos de Paula**
 
 
 ---
