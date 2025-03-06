@@ -53,21 +53,15 @@ Neste contexto, o Brazilian Workplace Analysis representa um esforço inovador p
 
 ###    Contextualização
 
-Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere. 
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas).
+A desigualdade racial no mercado de trabalho brasileiro é um fenômeno amplamente documentado. Segundo dados do IBGE (2022), enquanto 56% da população se declara preta ou parda, apenas 29% dos cargos gerenciais são ocupados por esses grupos. Além disso, trabalhadores negros e indígenas recebem, em média, salários 30% menores do que seus colegas brancos, mesmo quando possuem qualificações semelhantes. Essas disparidades não apenas perpetuam ciclos de pobreza e exclusão, mas também limitam o potencial de desenvolvimento econômico e social do país.
+
+Estudos como o Relatório das Desigualdades Raciais (GEMAA/UERJ, 2022) destacam que políticas de ação afirmativa e inclusão são essenciais para reduzir as disparidades, mas sua eficácia depende de diagnósticos precisos e embasados em dados. A aplicação de tecnologias como inteligência artificial e análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por trabalhadores pardos, negros e indígenas, além de sugerir ações práticas para promover a inclusão.
 
 ###    Problema
 
-Nesse momento você deve apresentar o problema que seu agente pretende resolver. 
-No entanto, não é a hora de comentar sobre a aplicação.
-Descreva também o contexto em que essa aplicação será usada, se  houver: 
-empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, 
-pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+O problema que o projeto Brazilian Workplace Analysis pretende resolver é a persistência de desigualdades raciais no mercado de trabalho brasileiro, especificamente a sub-representação e as barreiras enfrentadas por trabalhadores pardos, negros e indígenas. Esses grupos frequentemente encontram dificuldades para acessar empregos formais, ocupar cargos de liderança e receber salários equitativos, mesmo quando possuem qualificações semelhantes às de outros grupos. Essas disparidades não apenas impactam a qualidade de vida desses trabalhadores, mas também limitam o potencial de desenvolvimento econômico e social do país.
 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve 
-sucintamente apresentar o cenário de problema da empresa. A empresa só deve ser citada 
-explicitamente se o aluno tiver autorização para tal.
+A falta de dados consolidados e análises detalhadas sobre essas desigualdades dificulta a criação de políticas e ações efetivas para promover a inclusão e a equidade racial. Além disso, muitas empresas e gestores públicos não possuem ferramentas adequadas para identificar e combater essas disparidades em seus ambientes laborais.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -75,18 +69,23 @@ explicitamente se o aluno tiver autorização para tal.
 
 ###    Objetivo geral
 
-Nesta seção deve-se escrever um pequeno parágrafo ou frase com o **objetivo geral** 
-do trabalho. O objetivo deve ser bem direto, específico e definido com verbos de 
-ação (elaborar, propor, avaliar, comparar etc.). No caso deste projeto, o objetivo é
-"desenvolver um sistema inteligente para ...". O seu objetivo geral deve ser uma
-pergunta orientada a dados. Ou seja, ela deve incluir de forma geral os dados em que
-os modelos irão se basear para atingir o objetivo.
+Desenvolver um sistema inteligente para analisar bases de dados e identificar padrões de desigualdade racial no mercado de trabalho brasileiro, com foco na integração de trabalhadores pardos, negros e indígenas. O sistema visa sugerir ações práticas para promover a equidade racial e a inclusão em ambientes laborais.
+
+Quais são as principais oportunidades e injustiças enfrentadas por trabalhadores pardos, negros e indígenas no mercado de trabalho brasileiro, e como essas dinâmicas refletem as desigualdades raciais e sociais no país?
+
+
 
 ####    Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
-você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar 
-no seu trabalho.
+1. Coletar e preparar dados socioeconômicos e laborais de fontes como o IBGE e a Rais.
+
+2. Implementar algoritmos de análise de dados para identificar padrões de desigualdade racial.
+
+3. Desenvolver uma plataforma que ofereça insights e recomendações para empresas e gestores públicos.
+
+4. Avaliar a eficácia do sistema por meio de métricas de desempenho e validação cruzada.
+
+
 
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
@@ -94,12 +93,11 @@ no seu trabalho.
 
 ###    Justificativas
 
-Mostre também as **justificativas** para o  desenvolvimento do seu trabalho e, caso deseje, 
-destaque alguma contribuição do trabalho.
+A persistência de disparidades raciais no Brasil é um desafio enraizado na história e na estrutura social do país, com reflexos diretos no mercado de trabalho. Profissionais pardos, negros e indígenas frequentemente encontram obstáculos como discriminação, acesso restrito a educação de qualidade e oportunidades reduzidas de crescimento profissional. Essas desigualdades não só perpetuam ciclos de pobreza e marginalização, mas também geram impactos negativos na economia e na harmonia social.
 
-A justific ativa deve descrever a importância ou a motivação para o desenvolvimento do 
-sistema inteligente escolhido. Indique as razões pelas quais você escolheu seus objetivos 
-específicos ou as razões para aprofundar em certos aspectos do software.
+Diante desse cenário, a criação de um sistema inteligente que utilize técnicas de análise de dados e machine learning torna-se fundamental para compreender as causas dessas disparidades e propor soluções embasadas em evidências. A definição de objetivos específicos, como a coleta e análise de dados socioeconômicos e laborais, busca identificar padrões de desigualdade e sugerir medidas concretas para fomentar a equidade racial.
+
+Além disso, o projeto contribui para o debate sobre a relevância de políticas públicas e corporativas que incentivem a diversidade e a inclusão, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, em especial o ODS 10 (Redução das Desigualdades). A construção de uma plataforma que ofereça insights e recomendações personalizadas para empresas e gestores públicos representa uma contribuição prática e inovadora, visando transformar o mercado de trabalho em um ambiente mais justo e inclusivo.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
