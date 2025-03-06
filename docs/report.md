@@ -29,7 +29,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. 
+###	Resumo
+
 O projeto Brazilian Workplace Analysis tem como foco combater as desigualdades raciais no mercado de trabalho, utilizando tecnologias de inteligência artificial para analisar e interpretar dados socioeconômicos e laborais. O sistema busca identificar desafios enfrentados por trabalhadores pardos, negros e indígenas, como disparidades salariais, falta de acesso a cargos de liderança e barreiras à inclusão. O objetivo principal é criar uma plataforma que processe grandes volumes de dados, gerando insights e recomendações para empresas e gestores públicos, com o intuito de fomentar práticas mais justas e inclusivas.
 
 A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (Ministério do Trabalho) e estudos acadêmicos, aplicando técnicas de machine learning para detectar padrões e propor ações efetivas, como políticas de diversidade e programas de capacitação. O público-alvo inclui organizações privadas, governos, pesquisadores e entidades da sociedade civil.
@@ -39,7 +40,7 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades ra
 ---
 
 
-## Introdução
+###	Introdução
 
 A desigualdade racial no mercado de trabalho brasileiro é um desafio histórico e estrutural, que persiste mesmo diante dos avanços nas políticas de inclusão e diversidade. Trabalhadores pardos, negros e indígenas continuam enfrentando barreiras significativas, como acesso limitado a empregos formais, disparidades salariais e sub-representação em cargos de liderança. Essas desigualdades não apenas refletem as dinâmicas sociais do país, mas também impactam negativamente a economia e a coesão social, perpetuando ciclos de exclusão e marginalização.
 
