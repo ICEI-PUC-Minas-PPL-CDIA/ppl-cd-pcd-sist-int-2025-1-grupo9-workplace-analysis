@@ -55,7 +55,7 @@ Além disso, a rápida evolução das ferramentas e linguagens de programação 
  
 ###    Contextualização
 
-
+O etarismo no mercado de trabalho é um fenômeno global, mas assume contornos particulares no Brasil. Segundo dados do IBGE (2022), houve um aumento de 56,0% na população acima de 55 anos em relação a 2010; entretanto, o mercado de trabalho aparenta não acompanhar esse crescimento.
 
 ###    Problema
 
