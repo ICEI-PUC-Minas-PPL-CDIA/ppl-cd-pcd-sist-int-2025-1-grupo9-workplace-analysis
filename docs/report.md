@@ -79,13 +79,7 @@ Quais são as principais oportunidades e injustiças enfrentadas por trabalhador
 
 ####    Objetivos específicos
 
-1. Coletar e preparar dados socioeconômicos e laborais de fontes como o IBGE e a Rais.
-
-2. Implementar algoritmos de análise de dados para identificar padrões de desigualdade racial.
-
-3. Desenvolver uma plataforma que ofereça insights e recomendações para empresas e gestores públicos.
-
-4. Avaliar a eficácia do sistema por meio de métricas de desempenho e validação cruzada.
+ 
 
 
 
