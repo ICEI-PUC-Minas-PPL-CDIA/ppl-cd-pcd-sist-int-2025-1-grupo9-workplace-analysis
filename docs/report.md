@@ -55,9 +55,7 @@ Além disso, a rápida evolução das ferramentas e linguagens de programação 
  
 ###    Contextualização
 
-A desigualdade racial no mercado de trabalho brasileiro é um fenômeno amplamente documentado. Segundo dados do IBGE (2022), enquanto 56% da população se declara preta ou parda, apenas 29% dos cargos gerenciais são ocupados por esses grupos. Além disso, trabalhadores negros e indígenas recebem, em média, salários 30% menores do que seus colegas brancos, mesmo quando possuem qualificações semelhantes. Essas disparidades não apenas perpetuam ciclos de pobreza e exclusão, mas também limitam o potencial de desenvolvimento econômico e social do país.
 
-Estudos como o Relatório das Desigualdades Raciais (GEMAA/UERJ, 2022) destacam que políticas de ação afirmativa e inclusão são essenciais para reduzir as disparidades, mas sua eficácia depende de diagnósticos precisos e embasados em dados. A aplicação de tecnologias como inteligência artificial e análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por trabalhadores pardos, negros e indígenas, além de sugerir ações práticas para promover a inclusão.
 
 ###    Problema
 
