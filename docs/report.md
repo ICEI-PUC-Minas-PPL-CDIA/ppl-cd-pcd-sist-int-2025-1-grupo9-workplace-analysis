@@ -93,6 +93,7 @@ O etarismo é uma forma de discirminação frequentemente ignorada, mas que afet
 
 No setor de dados, essa discriminação se torna ainda mais evidente devido a rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores seniores, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência. Dessa forma, este estudo se torna essencial para formar um debate amplo sobre políticas de inclusão e para incentivar empresas a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
 
+O Uso de tecnologias artificiais, Gráficos do IBGE, dados de fontes como a PNAD contínua(Pesquisa do IBGE que analisa o mercado de trabalho no Brasil), para buscar informações e formas de solucionar essa desvalorização dos trabalhadores seniores.
 
 
 
