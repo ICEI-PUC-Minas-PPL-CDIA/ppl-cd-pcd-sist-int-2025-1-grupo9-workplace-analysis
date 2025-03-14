@@ -71,9 +71,7 @@ A falta de dados consolidados e análises detalhadas sobre esta discriminação 
 
 ###    Objetivo geral
 
-Desenvolver um sistema inteligente para analisar bases de dados e identificar padrões de desigualdade racial no mercado de trabalho brasileiro, com foco na integração de trabalhadores pardos, negros e indígenas. O sistema visa sugerir ações práticas para promover a equidade racial e a inclusão em ambientes laborais.
 
-Quais são as principais oportunidades e injustiças enfrentadas por trabalhadores pardos, negros e indígenas no mercado de trabalho brasileiro, e como essas dinâmicas refletem as desigualdades raciais e sociais no país?
 
 
 
