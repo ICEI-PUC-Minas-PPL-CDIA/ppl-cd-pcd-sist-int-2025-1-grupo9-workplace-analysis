@@ -79,7 +79,7 @@ Quais são as principais oportunidades e injustiças enfrentadas por trabalhador
 
 ####    Objetivos específicos
 
- 
+ -Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
 
 
 
