@@ -90,11 +90,7 @@ Quais são as principais oportunidades e injustiças enfrentadas por trabalhador
 
 ###    Justificativas
 
-A persistência de disparidades raciais no Brasil é um desafio enraizado na história e na estrutura social do país, com reflexos diretos no mercado de trabalho. Profissionais pardos, negros e indígenas frequentemente encontram obstáculos como discriminação, acesso restrito a educação de qualidade e oportunidades reduzidas de crescimento profissional. Essas desigualdades não só perpetuam ciclos de pobreza e marginalização, mas também geram impactos negativos na economia e na harmonia social.
 
-Diante desse cenário, a criação de um sistema inteligente que utilize técnicas de análise de dados e machine learning torna-se fundamental para compreender as causas dessas disparidades e propor soluções embasadas em evidências. A definição de objetivos específicos, como a coleta e análise de dados socioeconômicos e laborais, busca identificar padrões de desigualdade e sugerir medidas concretas para fomentar a equidade racial.
-
-Além disso, o projeto contribui para o debate sobre a relevância de políticas públicas e corporativas que incentivem a diversidade e a inclusão, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, em especial o ODS 10 (Redução das Desigualdades). A construção de uma plataforma que ofereça insights e recomendações personalizadas para empresas e gestores públicos representa uma contribuição prática e inovadora, visando transformar o mercado de trabalho em um ambiente mais justo e inclusivo.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
