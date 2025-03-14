@@ -91,6 +91,9 @@ Quais são as principais oportunidades e injustiças enfrentadas por trabalhador
 ###    Justificativas
 O etarismo é uma forma de discirminação frequentemente ignorada, mas que afeta milhões de pessoas em diferentes fases da vida, especialmente idosos e jovens. O projeto Brazilian Workplace Analysis, busca se conscientizar a sociedade sobre o etarismo pois essa discriminação limita oportunidades e reforça desigualdades. Ao reconhecer o etarismo como um problema real, a sociedade pode trabalhar para eliminá-lo e criar um ambiente mais inclusivo para todas as gerações.
 
+No setor de dados, essa discriminação se torna ainda mais evidente devido a rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores seniores, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência. Dessa forma, este estudo se torna essencial para formar um debate amplo sobre políticas de inclusão e para incentivar empresas a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
+
+
 
 
 > **Links Úteis**:
