@@ -44,6 +44,8 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades ra
 
 O etarismo, ou discriminação etária, se consolida como um desafio persistente no mercado de trabalho, e o setor de dados não se exime desse problema.
 
+Embora a ciência de dados, análise de dados,e a engenharia de dados apresentem um crescimento exponencial, há uma percepção de que o setor é dominado pelos jovens. Muitos profissionais mais experientes enfrentam barreiras, seja na contratação, ou na progressão na carreira, devido ao estigma de que habilidades tecnológicas estão mais associadas às gerações mais novas.
+
 
 
  
