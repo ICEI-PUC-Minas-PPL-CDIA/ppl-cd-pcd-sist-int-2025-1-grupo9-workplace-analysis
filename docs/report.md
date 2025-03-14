@@ -71,7 +71,7 @@ A falta de dados consolidados e análises detalhadas sobre esta discriminação 
 
 ###    Objetivo geral
 
-
+Examinar a influência do etarismo no mercado de dados, averiguando a forma de como a discriminação impacta na contratação, permanência e desenvolvimento dos profissionais mais experientes.
 
 
 
