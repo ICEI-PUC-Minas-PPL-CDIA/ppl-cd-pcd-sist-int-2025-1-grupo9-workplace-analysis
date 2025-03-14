@@ -62,7 +62,7 @@ De acordo com o IBGE (2024), os trabalhadores acima de 55 anos representam mais 
 A aplicação de tecnologias como inteligência artificial e análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por esses profissionais e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis utiliza dados de fontes confiáveis, como a PNAD Contínua, Rais e IPEA, para mapear padrões de desigualdade e sugerir ações práticas para promover a inclusão de trabalhadores seniores.
 
 ###    Problema
-
+O projeto "Brazilian Workplace Analysis" tem como principal objetivo compreender o fenômeno do etarismo e elaborar sugestões com base em dados que visem na diminuição dos impactos deste no cenário atual do mercado de trabalho brasileiro.
 
 
 ###    Objetivo geral
