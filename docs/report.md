@@ -103,7 +103,7 @@ Além disso, o projeto contribui para o debate sobre a relevância de políticas
 
 ##    Público alvo
 
-O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade racial no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar dados e tecnologia para combater desigualdades e fomentar a inclusão.
+O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade  no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar 
 
 Diagrama de Persona
 Nome: Ana Paula Silva
@@ -111,17 +111,17 @@ Gênero: Feminino
 Idade: 35
 Cidade: São Paulo
 
-Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de equidade racial e de gênero na empresa.
+Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de 
 
 Objetivos:
 
 Promover a diversidade e a inclusão dentro da empresa.
 
-Reduzir as disparidades salariais entre grupos raciais.
+Reduzir as disparidades salariais entre .
 
 Problemas:
 
-Dificuldade em identificar as causas das desigualdades raciais na empresa.
+Dificuldade em identificar as causas das desigualdades  na empresa.
 
 Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
