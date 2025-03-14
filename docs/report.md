@@ -59,6 +59,8 @@ O etarismo no mercado de trabalho é um fenômeno global, mas assume contornos p
 
 De acordo com o IBGE (2024), os trabalhadores acima de 55 anos representam mais de 22% da população economicamente ativa, mas enfrentam dificuldades para se recolocar no mercado após demissões ou transições de carreira. Nesse sentido, o número de trabalhadores nessa faixa etária com carteira assinada está em queda desde 2022, mesmo com o aumento na oferta de empregos. Além disso, estudos mostram que trabalhadores seniores frequentemente recebem salários menores e têm menos oportunidades de ascensão profissional em comparação com colegas mais jovens.
 
+A aplicação de tecnologias como inteligência artificial e análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por esses profissionais e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis utiliza dados de fontes confiáveis, como a PNAD Contínua, Rais e IPEA, para mapear padrões de desigualdade e sugerir ações práticas para promover a inclusão de trabalhadores seniores.
+
 ###    Problema
 
 O problema que o projeto Brazilian Workplace Analysis pretende resolver é a persistência de desigualdades raciais no mercado de trabalho brasileiro, especificamente a sub-representação e as barreiras enfrentadas por trabalhadores pardos, negros e indígenas. Esses grupos frequentemente encontram dificuldades para acessar empregos formais, ocupar cargos de liderança e receber salários equitativos, mesmo quando possuem qualificações semelhantes às de outros grupos. Essas disparidades não apenas impactam a qualidade de vida desses trabalhadores, mas também limitam o potencial de desenvolvimento econômico e social do país.
