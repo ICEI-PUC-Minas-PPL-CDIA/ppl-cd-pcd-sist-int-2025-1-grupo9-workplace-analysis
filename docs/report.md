@@ -46,6 +46,8 @@ O etarismo, ou discriminação etária, se consolida como um desafio persistente
 
 Embora a ciência de dados, análise de dados,e a engenharia de dados apresentem um crescimento exponencial, há uma percepção de que o setor é dominado pelos jovens. Muitos profissionais mais experientes enfrentam barreiras, seja na contratação, ou na progressão na carreira, devido ao estigma de que habilidades tecnológicas estão mais associadas às gerações mais novas.
 
+Além disso, a rápida evolução das ferramentas e linguagens de programação pode fortalecer essa discriminação, criando um ambiente onde se espera que apenas os mais jovens consigam acompanhar as mudanças. No entanto, a diversidade geracional pode ser um grande diferencial competitivo para as empresas, combinando a experiência e a visão estratégica dos profissionais mais seniores com a inovação e o dinamismo dos mais jovens.
+
 
 
  
