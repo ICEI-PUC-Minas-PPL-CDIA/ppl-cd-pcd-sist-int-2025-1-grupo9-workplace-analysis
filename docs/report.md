@@ -63,12 +63,6 @@ A aplicação de tecnologias como inteligência artificial e análise de dados p
 
 ###    Problema
 
-O problema que o projeto Brazilian Workplace Analysis pretende resolver é a persistência de desigualdades raciais no mercado de trabalho brasileiro, especificamente a sub-representação e as barreiras enfrentadas por trabalhadores pardos, negros e indígenas. Esses grupos frequentemente encontram dificuldades para acessar empregos formais, ocupar cargos de liderança e receber salários equitativos, mesmo quando possuem qualificações semelhantes às de outros grupos. Essas disparidades não apenas impactam a qualidade de vida desses trabalhadores, mas também limitam o potencial de desenvolvimento econômico e social do país.
-
-A falta de dados consolidados e análises detalhadas sobre essas desigualdades dificulta a criação de políticas e ações efetivas para promover a inclusão e a equidade racial. Além disso, muitas empresas e gestores públicos não possuem ferramentas adequadas para identificar e combater essas disparidades em seus ambientes laborais.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 
 
 ###    Objetivo geral
