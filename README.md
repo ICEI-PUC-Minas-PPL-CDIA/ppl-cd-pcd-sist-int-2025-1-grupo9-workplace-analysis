@@ -1,7 +1,6 @@
 # Brazilian Workplace Analysis
 
-O objetivo deste projeto é desenvolver um sistema inteligente de análise e monitoramento de diversidade e inclusão racial em ambientes laborais. O produto consiste em uma plataforma tecnológica que utiliza algoritmos de inteligência artificial e machine learning para processar dados socioeconômicos, demográficos e laborais, com foco em trabalhadores pardos, negros e indígenas. O sistema será capaz de identificar padrões de desigualdade, como disparidades salariais, acesso a cargos de liderança e representação em diferentes setores, além de fornecer insights personalizados para empresas e gestores públicos.
-
+O objetivo deste projeto é desenvolver um sistema inteligente de análise e monitoramento de diversidade e inclusão geracional em ambientes laborais. O produto consiste em uma plataforma tecnológica que utiliza algoritmos de inteligência artificial e machine learning para processar dados socioeconômicos, demográficos e laborais, com foco em trabalhadores seniores (acima de 50 anos). O sistema será capaz de identificar padrões de desigualdade, como dificuldades de recolocação, disparidades salariais e acesso limitado a cargos de liderança, além de fornecer insights personalizados para empresas e gestores públicos.
 ## Integrantes
 
 * Lucca Favilla Campos de Paula
