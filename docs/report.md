@@ -48,6 +48,8 @@ Embora a ciência de dados, análise de dados,e a engenharia de dados apresentem
 
 Além disso, a rápida evolução das ferramentas e linguagens de programação pode fortalecer essa discriminação, criando um ambiente onde se espera que apenas os mais jovens consigam acompanhar as mudanças. No entanto, a diversidade geracional pode ser um grande diferencial competitivo para as empresas, combinando a experiência e a visão estratégica dos profissionais mais seniores com a inovação e o dinamismo dos mais jovens.
 
+ Diante desse contexto, o projeto “Brazilian Workplace Analysis” busca investigar o fundo do impacto do etarismo no mercado de dados, analisando fatores como os desafios enfrentados por profissionais seniores, as tendências de contratação no setor e as soluções possíveis para promover um ambiente mais inclusivo e diverso.
+
 
 
  
