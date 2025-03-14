@@ -122,7 +122,7 @@ Reduzir as disparidades salariais entre reduzir a disparidade salarial entre os 
 
 Problemas:
 
-Dificuldade em identificar as causas das desigualdades  na empresa.
+Dificuldade em identificar as causas das desigualdades etárias na empresa.
 
 Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
