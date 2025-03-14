@@ -42,6 +42,8 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades ra
 
 ###	Introdução
 
+O etarismo, ou discriminação etária, se consolida como um desafio persistente no mercado de trabalho, e o setor de dados não se exime desse problema.
+
 
 
  
