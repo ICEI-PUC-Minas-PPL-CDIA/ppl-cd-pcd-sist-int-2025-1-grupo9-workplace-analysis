@@ -31,11 +31,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ###	Resumo
 
-O projeto Brazilian Workplace Analysis tem como foco combater as desigualdades raciais no mercado de trabalho, utilizando tecnologias de inteligência artificial para analisar e interpretar dados socioeconômicos e laborais. O sistema busca identificar desafios enfrentados por trabalhadores pardos, negros e indígenas, como disparidades salariais, falta de acesso a cargos de liderança e barreiras à inclusão. O objetivo principal é criar uma plataforma que processe grandes volumes de dados, gerando insights e recomendações para empresas e gestores públicos, com o intuito de fomentar práticas mais justas e inclusivas.
+O projeto Brazilian Workplace Analysis tem como foco combater o etarismo no mercado de trabalho, utilizando tecnologias de inteligência artificial para analisar e interpretar dados socioeconômicos e laborais. O sistema busca identificar desafios enfrentados por trabalhadores seniores (acima de 50 anos), como dificuldades de recolocação, disparidades salariais e barreiras à inclusão. O objetivo principal é criar uma plataforma que processe grandes volumes de dados, gerando insights e recomendações para empresas e gestores públicos, com o intuito de fomentar práticas mais justas e inclusivas.
 
-A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (Ministério do Trabalho) e estudos acadêmicos, aplicando técnicas de machine learning para detectar padrões e propor ações efetivas, como políticas de diversidade e programas de capacitação. O público-alvo inclui organizações privadas, governos, pesquisadores e entidades da sociedade civil.
+A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (Ministério do Trabalho) e estudos acadêmicos, aplicando técnicas de machine learning para detectar padrões de desigualdade e propor ações efetivas, como políticas de inclusão e programas de capacitação. O público-alvo inclui organizações privadas, governos, pesquisadores e entidades da sociedade civil.
 
-Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades raciais no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada._
+Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades relacionadas ao etarismo no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada._
 
 ---
 
