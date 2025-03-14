@@ -42,16 +42,9 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades ra
 
 ###	Introdução
 
-A desigualdade racial no mercado de trabalho brasileiro é um desafio histórico e estrutural, que persiste mesmo diante dos avanços nas políticas de inclusão e diversidade. Trabalhadores pardos, negros e indígenas continuam enfrentando barreiras significativas, como acesso limitado a empregos formais, disparidades salariais e sub-representação em cargos de liderança. Essas desigualdades não apenas refletem as dinâmicas sociais do país, mas também impactam negativamente a economia e a coesão social, perpetuando ciclos de exclusão e marginalização.
 
-Diante desse cenário, a tecnologia surge como uma ferramenta poderosa para compreender e combater essas disparidades. A inteligência artificial e a análise de dados oferecem a possibilidade de mapear padrões de desigualdade, identificar pontos críticos e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis se propõe a desenvolver um sistema inteligente que centralize e analise dados socioeconômicos e laborais, com foco na integração de trabalhadores pardos, negros e indígenas, visando promover ambientes de trabalho mais inclusivos e equitativos.
-
-O sistema utiliza técnicas avançadas de machine learning para processar informações de fontes confiáveis, como a PNAD Contínua (IBGE) e a Rais (Ministério do Trabalho), além de estudos acadêmicos e relatórios especializados. Ao identificar padrões de desigualdade e sugerir ações práticas, a plataforma busca ser uma ferramenta estratégica para empresas, gestores públicos e organizações da sociedade civil, contribuindo para a transformação do mercado de trabalho em um espaço mais justo e diverso.
-
-Neste contexto, o Brazilian Workplace Analysis representa um esforço inovador para unir tecnologia e justiça social, oferecendo soluções embasadas em dados para um dos desafios mais urgentes do Brasil contemporâneo. Ao combinar análise de dados, inteligência artificial e políticas de inclusão, o trabalho visa não apenas diagnosticar problemas, mas também apontar caminhos concretos para a construção de um futuro mais igualitário.
 
  
-
 ###    Contextualização
 
 A desigualdade racial no mercado de trabalho brasileiro é um fenômeno amplamente documentado. Segundo dados do IBGE (2022), enquanto 56% da população se declara preta ou parda, apenas 29% dos cargos gerenciais são ocupados por esses grupos. Além disso, trabalhadores negros e indígenas recebem, em média, salários 30% menores do que seus colegas brancos, mesmo quando possuem qualificações semelhantes. Essas disparidades não apenas perpetuam ciclos de pobreza e exclusão, mas também limitam o potencial de desenvolvimento econômico e social do país.
