@@ -104,7 +104,7 @@ O Uso de tecnologias artificiais, Gráficos do IBGE, dados de fontes como a PNAD
 
 ##    Público alvo
 
-O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade  no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar 
+O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade etária no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar tecnologia e dados para concretizar a inclusão e acabar com as desigualdades presentes atualmente em diversos setores trabalhistas.
 
 Diagrama de Persona
 Nome: Ana Paula Silva
