@@ -118,7 +118,7 @@ Objetivos:
 
 Promover a diversidade e a inclusão dentro da empresa.
 
-Reduzir as disparidades salariais entre .
+Reduzir as disparidades salariais entre reduzir a disparidade salarial entre os diversos grupos etários existentes no ambiente de trabalho.
 
 Problemas:
 
