@@ -64,8 +64,7 @@ A aplicação de tecnologias como inteligência artificial e análise de dados p
 ###    Problema
 O projeto "Brazilian Workplace Analysis" tem como principal objetivo compreender o fenômeno do etarismo e elaborar sugestões com base em dados que visem na diminuição dos impactos deste no cenário atual do mercado de trabalho brasileiro.
 Os esteriótipos como baixa produtividade, vulnerabilidade de saúde e dificuldade com a utilização de tecnologia são recorrentes quando indivíduos com idade superior a 55 anos tentam se candidatar ou se recolocar no mercado de trabalho. Fato estes que resultam na negação de oportunidade de emprego, baixa remuneração e consequentemente impacto na saúde financeira dos indivíduos em questão.
-
-
+A falta de dados consolidados e análises detalhadas sobre esta discriminação dificulta a inclusão de ações que visem promover políticas que garantam oportunidades e condições fianceirias igualitárias em vagas de trabalho, sem que o fator da idade seja um dificultador. Além disso, muitos gestores públicos e empresas não possuem as ferramentas necessárias para combater esta problema em seus ambientes laborais.
 
 
 ###    Objetivo geral
