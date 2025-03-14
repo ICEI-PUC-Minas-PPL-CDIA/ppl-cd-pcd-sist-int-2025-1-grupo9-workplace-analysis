@@ -112,7 +112,7 @@ Gênero: Feminino
 Idade: 35
 Cidade: São Paulo
 
-Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de 
+Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de igualdade etária e de gênero na empresa em que trabalha. 
 
 Objetivos:
 
