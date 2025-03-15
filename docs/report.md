@@ -73,6 +73,7 @@ A falta de dados consolidados e análises detalhadas sobre esta discriminação 
 
 Examinar a influência do etarismo no mercado de dados, averiguando a forma de como a discriminação impacta na contratação, permanência e desenvolvimento dos profissionais mais experientes.
 
+Ademais o estudo busca compreender as causas e consequências referentes a este preconceito, a fim de propor estratégias e soluções  que busquem proporcionar um ambiente de trabalho mais inclusivo, equitativo e diversificado.
 
 
 ####    Objetivos específicos
