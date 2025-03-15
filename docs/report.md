@@ -78,8 +78,8 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 ####    Objetivos específicos
 
- -Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
- -Compreender a percepção de recrutadores e trabalhadores sobre profissionais mais velhos no setor, avaliando quais preconceitos influenciam as decisões de contratação.
+O etarismo no mercado de trabalho é um fenômeno que impacta diretamente a empregabilidade, a progressão profissional e a valorização de profissionais mais experientes. No setor de dados, essa discriminação se torna ainda mais evidente devido à rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores seniores, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência
+A exclusão de profissionais mais velhos não apenas prejudica a trajetória individual desses trabalhadores, mas também representa uma perda para as empresas e para o mercado como um todo. A falta de diversidade etária pode limitar a inovação, reduzir a troca de conhecimento entre gerações e promover práticas de contratação excludentes, perpetuando um ciclo de discriminação e desperdício de talentos. Dessa forma, este estudo se torna essencial para fomentar um debate amplo sobre políticas de inclusão e para empresas incentivarem a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
 
 
 
