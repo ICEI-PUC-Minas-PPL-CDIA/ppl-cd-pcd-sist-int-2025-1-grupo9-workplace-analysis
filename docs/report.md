@@ -82,6 +82,7 @@ O etarismo no mercado de trabalho é um fenômeno que impacta diretamente a empr
 A exclusão de profissionais mais velhos não apenas prejudica a trajetória individual desses trabalhadores, mas também representa uma perda para as empresas e para o mercado como um todo. A falta de diversidade etária pode limitar a inovação, reduzir a troca de conhecimento entre gerações e promover práticas de contratação excludentes, perpetuando um ciclo de discriminação e desperdício de talentos. Dessa forma, este estudo se torna essencial para fomentar um debate amplo sobre políticas de inclusão e para empresas incentivarem a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
 
 • Mapear os principais desafios enfrentados pelos profissionais seniores, incluindo dificuldades na atualização tecnológica, limitações de acesso, oportunidades de capacitação e obstáculos no crescimento profissional.
+• Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
 
 
 
