@@ -83,6 +83,7 @@ A exclusão de profissionais mais velhos não apenas prejudica a trajetória ind
 
 • Mapear os principais desafios enfrentados pelos profissionais seniores, incluindo dificuldades na atualização tecnológica, limitações de acesso, oportunidades de capacitação e obstáculos no crescimento profissional.
 • Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
+• Compreender a percepção de recrutadores e trabalhadores sobre profissionais mais velhos no setor, avaliando quais preconceitos influenciam as decisões de contratação.
 
 
 
