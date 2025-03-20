@@ -166,6 +166,15 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | regiao                 | Região do Brasil onde atua                    | Categórico     |
 | indice_desenvolvimento | Índice de desenvolvimento humano (IDH)        | Numérico       |
 
+#### Base do IPEA
+| Atributo               | Descrição                                      | Tipo de Dado   |
+|------------------------|-----------------------------------------------|----------------|
+| Empregado - Com carteira de trabalho assinada (2) | Especifica quantos trabalhadores não têm carteira assinada | Numérico     |
+| Empregado - Sem carteira de trabalho assinada (3) | Especifica quantos trabalhador não têm carteira assinada   | Numérico     |
+| Militar ou funcionário público estatutário        | Indica a o número de trabalhadores em funções públicas     | Numérico     |
+| Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
+| Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
+
 ###    Descrição de dados
 
 Utilize a análise descritiva baseada em estatística de primeira ordem para descrever os dados.
