@@ -126,7 +126,7 @@ Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
 ## Análise Exploratória dos Dados
 Dicionário de Dados
-Aqui está a descrição das bases de dados que serão utilizadas no projeto Brazilian Workplace Analysis, com foco no etarismo no mercado de trabalho. O projeto utilizará duas fontes principais: a State_of_Data_BR_2023 (fonte principal) e a PNAD Contínua (IBGE) (fonte de enriquecimento).
+Aqui está a descrição das bases de dados que serão utilizadas no projeto Brazilian Workplace Analysis, com foco no etarismo no mercado de trabalho. O projeto utilizará duas fontes principais: a State_of_Data_BR_2023 (fonte principal), PNAD Contínua (IBGE) (fonte de enriquecimento) e a Base do IPEA.
 
 
 
