@@ -123,28 +123,48 @@ Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
 
 
+
 ## Análise Exploratória dos Dados
 Dicionário de Dados
 Aqui está a descrição das bases de dados que serão utilizadas no projeto Brazilian Workplace Analysis, com foco no etarismo no mercado de trabalho. O projeto utilizará duas fontes principais: a State_of_Data_BR_2023 (fonte principal) e a PNAD Contínua (IBGE) (fonte de enriquecimento).
 
+
+
+## Descrição das Bases
+
 1. State_of_Data_BR_2023
-Descrição da Base
 A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profissionais de dados no Brasil. Ela contém informações sobre salários, ferramentas utilizadas, nível de experiência, formação acadêmica, entre outros aspectos.
 
+2. Base do IPEA
+O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, como o Atlas do Desenvolvimento Humano no Brasil e o Sistema de Indicadores de Percepção Social (SIPS). Essas bases contêm informações sobre emprego, renda, educação e desigualdades regionais.
 
 ## Atributos Principais  
 
-| Atributo               | Descrição                                    | Tipo de Dado   |
-|------------------------|----------------------------------------------|---------------|
-| idade                 | Idade do profissional                        | Numérico      |
-| genero                | Gênero do profissional                       | Categórico    |
-| escolaridade          | Nível de escolaridade                        | Categórico    |
-| salario               | Salário mensal do profissional               | Numérico      |
-| experiencia           | Tempo de experiência na área de dados (anos) | Numérico      |
-| ferramentas_utilizadas | Ferramentas e tecnologias utilizadas        | Textual       |
-| setor                 | Setor de atuação                             | Categórico    |
-| cargo                 | Cargo ocupado                                | Categórico    |
-| regiao                | Região do Brasil onde atua                   | Categórico    |
+#### **State_of_Data_BR_2023**
+| Atributo               | Descrição                                      | Tipo de Dado   |
+|------------------------|-----------------------------------------------|----------------|
+| idade                  | Idade do profissional                         | Numérico       |
+| genero                 | Gênero do profissional                        | Categórico     |
+| escolaridade           | Nível de escolaridade                         | Categórico     |
+| salario                | Salário mensal do profissional                | Numérico       |
+| experiencia            | Tempo de experiência na área de dados (anos)  | Numérico       |
+| ferramentas_utilizadas | Ferramentas e tecnologias utilizadas          | Textual        |
+| setor                  | Setor de atuação                              | Categórico     |
+| cargo                  | Cargo ocupado                                 | Categórico     |
+| regiao                 | Região do Brasil onde atua                    | Categórico     |
+
+#### **Base do IPEA**
+| Atributo               | Descrição                                      | Tipo de Dado   |
+|------------------------|-----------------------------------------------|----------------|
+| idade                  | Idade do trabalhador                          | Numérico       |
+| genero                 | Gênero do trabalhador                         | Categórico     |
+| raca_cor               | Raça/cor do trabalhador                       | Categórico     |
+| escolaridade           | Nível de escolaridade                         | Categórico     |
+| rendimento             | Rendimento mensal do trabalhador              | Numérico       |
+| ocupacao               | Ocupação do trabalhador                       | Categórico     |
+| setor                  | Setor de atuação                              | Categórico     |
+| regiao                 | Região do Brasil onde atua                    | Categórico     |
+| indice_desenvolvimento | Índice de desenvolvimento humano (IDH)        | Numérico       |
 
 ###    Descrição de dados
 
