@@ -135,17 +135,28 @@ Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 
-## Análise exploratórida dos dados
+## Análise Exploratória dos Dados
+Dicionário de Dados
+Aqui está a descrição das bases de dados que serão utilizadas no projeto Brazilian Workplace Analysis, com foco no etarismo no mercado de trabalho. O projeto utilizará duas fontes principais: a State_of_Data_BR_2023 (fonte principal) e a PNAD Contínua (IBGE) (fonte de enriquecimento).
 
-###    Dicionário de dados
+1. State_of_Data_BR_2023
+Descrição da Base
+A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profissionais de dados no Brasil. Ela contém informações sobre salários, ferramentas utilizadas, nível de experiência, formação acadêmica, entre outros aspectos.
 
-Apresente uma descrição das bases de dados a serem utilizadas. 
-Dicionários de dados devem conter as bases de dados, os nomes dos atributos 
-com seu significado, seu tipo (inteiro, real, textual, categórico, etc).
 
-Este projeto deve utilizar pelo menos duas fontes de dados. Uma fonte principal e 
-uma fonte para enriquecimentos dos dados principais.
+## Atributos Principais  
 
+| Atributo               | Descrição                                    | Tipo de Dado   |
+|------------------------|----------------------------------------------|---------------|
+| idade                 | Idade do profissional                        | Numérico      |
+| genero                | Gênero do profissional                       | Categórico    |
+| escolaridade          | Nível de escolaridade                        | Categórico    |
+| salario               | Salário mensal do profissional               | Numérico      |
+| experiencia           | Tempo de experiência na área de dados (anos) | Numérico      |
+| ferramentas_utilizadas | Ferramentas e tecnologias utilizadas        | Textual       |
+| setor                 | Setor de atuação                             | Categórico    |
+| cargo                 | Cargo ocupado                                | Categórico    |
+| regiao                | Região do Brasil onde atua                   | Categórico    |
 
 ###    Descrição de dados
 
