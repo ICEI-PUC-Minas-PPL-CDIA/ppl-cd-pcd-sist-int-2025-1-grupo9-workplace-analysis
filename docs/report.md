@@ -86,9 +86,6 @@ O etarismo no mercado de trabalho é um fenômeno que impacta diretamente a empr
 
 
 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 
 ###    Justificativas
 O etarismo é uma forma de discirminação frequentemente ignorada, mas que afeta milhões de pessoas em diferentes fases da vida, especialmente idosos e jovens. O projeto Brazilian Workplace Analysis, busca conscientizar a sociedade sobre o etarismo, pois essa discriminação limita oportunidades e reforça desigualdades. Ao reconhecer o etarismo como um problema real, a sociedade pode trabalhar para eliminá-lo e criar um ambiente mais inclusivo para todas as gerações.
@@ -97,10 +94,6 @@ No setor de dados, essa discriminação se torna ainda mais evidente devido a r�
 
 O Uso de tecnologias artificiais, Gráficos do IBGE, dados de fontes como a PNAD contínua(Pesquisa do IBGE que analisa o mercado de trabalho no Brasil), para buscar informações e formas de solucionar essa desvalorização dos trabalhadores sênior.
 
-
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 
 
@@ -128,11 +121,6 @@ Dificuldade em identificar as causas das desigualdades etárias na empresa.
 
 Falta de ferramentas para monitorar o progresso das políticas de inclusão.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 
 ## Análise Exploratória dos Dados
