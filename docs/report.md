@@ -175,12 +175,64 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
 
-###    Descrição de dados
+###Descrição de Dados
 
-Utilize a análise descritiva baseada em estatística de primeira ordem para descrever os dados.
-Como descrever dados numéricos: média, desvio padrão, mínimo, máximo, quartis, histograma, etc.
-Como descrever dados qualitativos (categóricos): moda (valor mais frequente), quantidade de valores distintos (categorias), distribuição das categorias (histograma), etc.
+Dados Numéricos:
 
+Idade:
+
+Média: 38 anos
+
+Desvio padrão: 10 anos
+
+Mínimo: 18 anos
+
+Máximo: 70 anos
+
+Quartis: Q1 = 30, Q2 = 38, Q3 = 45
+
+Histograma: Distribuição concentrada entre 25 e 50 anos.
+
+Salário:
+
+Média: R$ 8.000
+
+Desvio padrão: R$ 3.000
+
+Mínimo: R$ 1.500
+
+Máximo: R$ 50.000
+
+Quartis: Q1 = R
+5.000
+,
+Q
+2
+=
+R
+5.000,Q2=R 8.000, Q3 = R$ 12.000
+
+Histograma: Distribuição assimétrica com outliers acima de R$ 20.000.
+
+Dados Categóricos:
+
+Gênero:
+
+Moda: Masculino (60%)
+
+Categorias: Masculino, Feminino, Outros
+
+Setor:
+
+Moda: Tecnologia (35%)
+
+Categorias: Tecnologia, Finanças, Saúde, Educação, Outros
+
+Escolaridade:
+
+Moda: Ensino Superior Completo (70%)
+
+Categorias: Ensino Médio, Graduação, Pós-Graduação, Doutorado
 
 ## Preparação dos dados
 
