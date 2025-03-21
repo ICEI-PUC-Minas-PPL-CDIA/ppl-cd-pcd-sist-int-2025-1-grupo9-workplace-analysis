@@ -175,64 +175,46 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
 
-###Descrição de Dados
+## Descrição de Dados
 
-Dados Numéricos:
+### Dados Numéricos
 
-Idade:
+#### Idade
+- **Média:** 38 anos  
+- **Desvio padrão:** 10 anos  
+- **Mínimo:** 18 anos  
+- **Máximo:** 70 anos  
+- **Quartis:**  
+  - Q1 = 30  
+  - Q2 (Mediana) = 38  
+  - Q3 = 45  
+- **Histograma:** Distribuição concentrada entre 25 e 50 anos.
 
-Média: 38 anos
+#### Salário
+- **Média:** R$ 8.000  
+- **Desvio padrão:** R$ 3.000  
+- **Mínimo:** R$ 1.500  
+- **Máximo:** R$ 50.000  
+- **Quartis:**  
+  - Q1 = R$ 5.000  
+  - Q2 (Mediana) = R$ 8.000  
+  - Q3 = R$ 12.000  
+- **Histograma:** Distribuição assimétrica com outliers acima de R$ 20.000.
 
-Desvio padrão: 10 anos
+### Dados Categóricos
 
-Mínimo: 18 anos
+#### Gênero
+- **Moda:** Masculino (60%)
+- **Categorias:** Masculino, Feminino, Outros
 
-Máximo: 70 anos
+#### Setor
+- **Moda:** Tecnologia (35%)
+- **Categorias:** Tecnologia, Finanças, Saúde, Educação, Outros
 
-Quartis: Q1 = 30, Q2 = 38, Q3 = 45
+#### Escolaridade
+- **Moda:** Ensino Superior Completo (70%)
+- **Categorias:** Ensino Médio, Graduação, Pós-Graduação, Doutorado
 
-Histograma: Distribuição concentrada entre 25 e 50 anos.
-
-Salário:
-
-Média: R$ 8.000
-
-Desvio padrão: R$ 3.000
-
-Mínimo: R$ 1.500
-
-Máximo: R$ 50.000
-
-Quartis: Q1 = R
-5.000
-,
-Q
-2
-=
-R
-5.000,Q2=R 8.000, Q3 = R$ 12.000
-
-Histograma: Distribuição assimétrica com outliers acima de R$ 20.000.
-
-Dados Categóricos:
-
-Gênero:
-
-Moda: Masculino (60%)
-
-Categorias: Masculino, Feminino, Outros
-
-Setor:
-
-Moda: Tecnologia (35%)
-
-Categorias: Tecnologia, Finanças, Saúde, Educação, Outros
-
-Escolaridade:
-
-Moda: Ensino Superior Completo (70%)
-
-Categorias: Ensino Médio, Graduação, Pós-Graduação, Doutorado
 
 ## Preparação dos dados
 
