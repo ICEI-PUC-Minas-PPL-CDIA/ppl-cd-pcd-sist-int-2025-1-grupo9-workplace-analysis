@@ -35,7 +35,7 @@ O projeto Brazilian Workplace Analysis tem como foco combater o etarismo no merc
 
 A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (Ministério do Trabalho) e estudos acadêmicos, aplicando técnicas de machine learning para detectar padrões de desigualdade e propor ações efetivas, como políticas de inclusão e programas de capacitação. O público-alvo inclui organizações privadas, governos, pesquisadores e entidades da sociedade civil.
 
-Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades relacionadas ao etarismo no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada._
+Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades relacionadas ao etarismo no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada.
 
 ---
 
