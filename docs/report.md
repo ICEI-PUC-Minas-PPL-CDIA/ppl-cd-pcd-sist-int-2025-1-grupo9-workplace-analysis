@@ -78,8 +78,6 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 ####    Objetivos específicos
 
-O etarismo no mercado de trabalho é um fenômeno que impacta diretamente a empregabilidade, a progressão profissional e a valorização de profissionais mais experientes. A falta de diversidade etária pode limitar a inovação, reduzir a troca de conhecimento entre gerações e promover práticas de contratação excludentes, perpetuando um ciclo de discriminação e desperdício de talentos. Dessa forma, este estudo se torna essencial para fomentar um debate amplo sobre políticas de inclusão e para empresas incentivarem a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
-
 • Mapear os principais desafios enfrentados pelos profissionais seniores, incluindo dificuldades na atualização tecnológica, limitações de acesso, oportunidades de capacitação e obstáculos no crescimento profissional.
 • Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
 • Compreender a percepção de recrutadores e trabalhadores sobre profissionais mais velhos no setor, avaliando quais preconceitos influenciam as decisões de contratação.
