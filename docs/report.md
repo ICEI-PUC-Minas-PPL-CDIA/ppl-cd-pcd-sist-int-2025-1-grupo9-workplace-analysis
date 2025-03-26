@@ -55,6 +55,8 @@ Além disso, a rápida evolução das ferramentas e linguagens de programação 
  
 ###    Contextualização
 
+O "State of Data 2023" representa a maior base de dados dedicada aos especialistas em ciência de dados no Brasil, permitindo a análise da atual situação da área. Nesse sentido, esta é a quarta edição do panorama, na qual mais de 5.200 profissionais foram entrevistados. Portanto, diversos temas podem ser estudados por meio dessa base, incluindo questões raciais, inclusão de pessoas com deficiência, integração da comunidade LGBT e o tema selecionado para este projeto: o etarismo.
+
 O etarismo no mercado de trabalho é um fenômeno global, mas assume contornos particulares no Brasil. Segundo dados do IBGE (2022), houve um aumento de 56,0% na população acima de 55 anos em relação a 2010; entretanto, o mercado de trabalho aparenta não acompanhar esse crescimento.
 
 De acordo com o IBGE (2024), os trabalhadores acima de 55 anos representam mais de 22% da população economicamente ativa, mas enfrentam dificuldades para se recolocar no mercado após demissões ou transições de carreira. Nesse sentido, o número de trabalhadores nessa faixa etária com carteira assinada está em queda desde 2022, mesmo com o aumento na oferta de empregos. Além disso, estudos mostram que trabalhadores seniores frequentemente recebem salários menores e têm menos oportunidades de ascensão profissional em comparação com colegas mais jovens.
