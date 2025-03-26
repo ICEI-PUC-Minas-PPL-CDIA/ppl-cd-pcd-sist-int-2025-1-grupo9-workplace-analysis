@@ -66,6 +66,9 @@ A aplicação de tecnologias como a inteligência artificial e a análise de dad
 
 ###    Problema
 
+No setor de dados, o etarismo se torna ainda mais evidente devido a uma rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores sênior, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência.
+
+
 
 
 ###    Objetivo geral
