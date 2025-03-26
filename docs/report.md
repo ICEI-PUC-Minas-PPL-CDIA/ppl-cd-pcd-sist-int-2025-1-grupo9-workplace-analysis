@@ -68,6 +68,9 @@ A aplicação de tecnologias como a inteligência artificial e a análise de dad
 
 No setor de dados, o etarismo se torna ainda mais evidente devido a uma rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores sênior, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência.
 
+Os esteriótipos como baixa produtividade, vulnerabilidade de saúde e dificuldades em acompanhar a evoluçao tenológica no setor são recorrentes quando indivíduos com idade superior a 55 anos tentam se candidatar ou se recolocar no mercado de trabalho. Fato estes que resultam na negação de oportunidade de emprego, baixa remuneração e consequentemente impacto na saúde financeira dos indivíduos em questão.
+
+
 
 
 
