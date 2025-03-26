@@ -80,10 +80,11 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 ####    Objetivos específicos
 
-• Mapear os principais desafios enfrentados pelos profissionais seniores, incluindo dificuldades na atualização tecnológica, limitações de acesso, oportunidades de capacitação e obstáculos no crescimento profissional.
-• Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
-• Compreender a percepção de recrutadores e trabalhadores sobre profissionais mais velhos no setor, avaliando quais preconceitos influenciam as decisões de contratação.
-
+.Mapear os principais desafios enfrentados pelos profissionais seniores, incluindo dificuldades na atualização tecnológica, limitações de acesso, oportunidades de capacitação e obstáculos no crescimento profissional.
+.Identificar padrões de exclusão etária no mercado de dados, analisando dados de contratação, promoção e desligamento de profissionais de diferentes idades.
+.Compreender a percepção de recrutadores e trabalhadores sobre profissionais mais velhos no setor, avaliando quais preconceitos influenciam as decisões de contratação.
+.Fomentar um debate amplo sobre políticas de inclusão.
+.Criar programas de incentivo à adotação de medidas que promovam a igualdade de oportunidades, independente da faixa etária.
 
 
 
