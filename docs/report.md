@@ -119,28 +119,6 @@ O Uso de tecnologias artificiais, Gráficos do IBGE, dados de fontes como a PNAD
 
 O projeto Brazilian Workplace Analysis tem como público-alvo empresas, gestores públicos, pesquisadores e organizações da sociedade civil que buscam promover a equidade etária no mercado de trabalho. Esses usuários estão distribuídos em diferentes setores e possuem perfis variados, mas compartilham o interesse em utilizar tecnologia e dados para concretizar a inclusão e acabar com as desigualdades presentes atualmente em diversos setores trabalhistas.
 
-Diagrama de Persona
-Nome: Ana Paula Silva
-Gênero: Feminino
-Idade: 35
-Cidade: São Paulo
-
-Bio: Ana é gerente de diversidade e inclusão em uma multinacional do setor de tecnologia. Formada em administração de empresas, ela é responsável por implementar políticas de igualdade etária e de gênero na empresa em que trabalha. 
-
-Objetivos:
-
-Promover a diversidade e a inclusão dentro da empresa.
-
-Reduzir as disparidades salariais entre reduzir a disparidade salarial entre os diversos grupos etários existentes no ambiente de trabalho.
-
-Problemas:
-
-Dificuldade em identificar as causas das desigualdades etárias na empresa.
-
-Falta de ferramentas para monitorar o progresso das políticas de inclusão.
-
-
-
 
 ## Análise Exploratória dos Dados
 Dicionário de Dados
