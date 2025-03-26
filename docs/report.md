@@ -70,6 +70,7 @@ No setor de dados, o etarismo se torna ainda mais evidente devido a uma rápida 
 
 Os esteriótipos como baixa produtividade, vulnerabilidade de saúde e dificuldades em acompanhar a evoluçao tenológica no setor são recorrentes quando indivíduos com idade superior a 55 anos tentam se candidatar ou se recolocar no mercado de trabalho. Fato estes que resultam na negação de oportunidade de emprego, baixa remuneração e consequentemente impacto na saúde financeira dos indivíduos em questão.
 
+ Dessa forma, um estudo aprofundado  se torna essencial para formar um debate amplo sobre a implementação de políticas de inclusão que visem promover a diversidade etária no mercado de trabalho juntamente com o impulsionamento de campanhas de consientização sobre o tema na sociedade.
 
 
 
