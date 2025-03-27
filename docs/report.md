@@ -110,7 +110,9 @@ O projeto de um sistema inteligente para enfrentar o etarismo no mercado de dado
 
 O sistema será capaz de identificar padrões de discriminação etária em processos seletivos, utilizando inteligência artificial para analisar dados e sugerir melhorias nos critérios de recrutamento. Também poderá auxiliar empresas na formulação de políticas mais inclusivas, ajudando a valorizar profissionais experientes e sua contribuição ao mercado.
 
+Além disso, a ferramenta poderá oferecer um módulo educacional para conscientizar gestores e recrutadores sobre a importância da diversidade etária, demonstrando seus impactos positivos na inovação e produtividade das equipes.
 
+Esse projeto não apenas combate o etarismo, mas também fortalece um ambiente de trabalho mais justo e diversificado, promovendo a valorização do talento e da experiência independentemente da idade.
 
 
 ##    Público alvo
