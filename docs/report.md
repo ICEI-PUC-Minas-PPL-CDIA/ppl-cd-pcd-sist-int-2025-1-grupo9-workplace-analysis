@@ -133,21 +133,38 @@ A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profission
 
 2. Base do IPEA
 O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, como o Atlas do Desenvolvimento Humano no Brasil e o Sistema de Indicadores de Percepção Social (SIPS). Essas bases contêm informações sobre emprego, renda, educação e desigualdades regionais.
+ 
+ ## Atributos Relevantes da Base de Dados
 
-## Atributos Principais  
-
-#### **State_of_Data_BR_2023**
-| Atributo               | Descrição                                      | Tipo de Dado   |
-|------------------------|-----------------------------------------------|----------------|
-| idade                  | Idade do profissional                         | Numérico       |
-| genero                 | Gênero do profissional                        | Categórico     |
-| escolaridade           | Nível de escolaridade                         | Categórico     |
-| salario                | Salário mensal do profissional                | Numérico       |
-| experiencia            | Tempo de experiência na área de dados (anos)  | Numérico       |
-| ferramentas_utilizadas | Ferramentas e tecnologias utilizadas          | Textual        |
-| setor                  | Setor de atuação                              | Categórico     |
-| cargo                  | Cargo ocupado                                 | Categórico     |
-| regiao                 | Região do Brasil onde atua                    | Categórico     |
+| Atributo | Tipo | Subtipo | Descrição |
+|----------|------|---------|-----------|
+| Idade | Numérico | - | Idade exata do respondente |
+| Faixa etária | Categórico | Ordinal | Agrupamento por intervalos de idade (ex: 30-34, 35-39, 55+) |
+| Gênero | Categórico | Nominal | Identidade de gênero do respondente (Masculino, Feminino, Não-binário, Outro) |
+| Cor/Raça/Etnia | Categórico | Nominal | Autodeclaração de raça (Branca, Preta, Amarela, Indígena, Parda) |
+| PCD | Categórico | Nominal | Se a pessoa possui deficiência (Sim, Não) |
+| Experiência prejudicada | Categórico | Nominal | Se o respondente acredita que sua experiência profissional foi afetada pelo etarismo |
+| Motivo da experiência prejudicada | Categórico | Nominal | Razões da discriminação (Idade, Gênero, Raça, Outro) |
+| Anos de experiência | Numérico | - | Tempo total de experiência profissional do respondente |
+| Área de atuação | Categórico | Nominal | Campo de trabalho (ex: Ciência de Dados, Engenharia de Software, Análise de Dados) |
+| Nível de escolaridade | Categórico | Ordinal | Grau acadêmico mais alto concluído (Graduação, Pós-graduação, Mestrado, Doutorado) |
+| Salário | Numérico | - | Faixa salarial do respondente |
+| Tipo de empresa | Categórico | Nominal | Setor da empresa onde trabalha (Pública, Privada, Startup, Autônomo) |
+| Tamanho da empresa | Categórico | Ordinal | Número de funcionários na empresa (Pequena, Média, Grande) |
+| Modelo de trabalho | Categórico | Nominal | Modalidade de trabalho (Presencial, Híbrido, Remoto) |
+| Satisfação profissional | Categórico | Ordinal | Nível de satisfação do respondente com sua carreira (Baixo, Médio, Alto) |
+| Oportunidades de promoção | Categórico | Ordinal | Se o respondente percebe oportunidades de crescimento na empresa (Sim, Não, Raramente) |
+| Já sofreu discriminação por idade? | Categórico | Nominal | Se o profissional acima de 55 anos já enfrentou discriminação direta (Sim, Não) |
+| Tipo de discriminação por idade | Categórico | Nominal | Formas de discriminação (Dificuldade de contratação, Exclusão em promoções, Comentários depreciativos) |
+| Adequação às novas tecnologias | Categórico | Ordinal | Se o profissional sente dificuldades em se adaptar a novas ferramentas e tendências (Nenhuma, Pouca, Média, Alta) |
+| Incentivo à diversidade etária na empresa | Categórico | Nominal | Se a empresa promove ações para incluir trabalhadores mais velhos (Sim, Não, Não sei) |
+| Planos de aposentadoria e transição de carreira | Categórico | Nominal | Se a empresa oferece suporte para planejamento da aposentadoria e requalificação (Sim, Não) |
+| Flexibilidade de trabalho para profissionais 55+ | Categórico | Nominal | Se há opções de trabalho mais flexíveis para trabalhadores mais velhos (Sim, Não) |
+| Acesso a treinamentos e capacitações | Categórico | Ordinal | Se a empresa oferece cursos e treinamentos para profissionais mais velhos (Sim, Não, Ocasionalmente) |
+| Frequência de atualização profissional | Categórico | Ordinal | Com que frequência o profissional acima de 55 anos realiza cursos ou capacitações (Nunca, Raramente, Algumas vezes, Frequentemente) |
+| Barreiras para recolocação profissional | Categórico | Nominal | Principais dificuldades para conseguir um novo emprego (Falta de oportunidades, Exigência de tecnologia, Salário abaixo do esperado) |
+| Sentimento de valorização na empresa | Categórico | Ordinal | Se o trabalhador 55+ se sente valorizado no ambiente de trabalho (Muito baixo, Baixo, Médio, Alto, Muito alto) |
+| Acesso a mentorias e suporte na empresa | Categórico | Nominal | Se há programas de mentoria ou suporte para trabalhadores mais velhos (Sim, Não) |
 
 #### **Base do IPEA**
 | Atributo               | Descrição                                      | Tipo de Dado   |
