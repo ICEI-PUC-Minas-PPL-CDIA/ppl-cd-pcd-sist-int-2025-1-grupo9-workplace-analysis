@@ -135,7 +135,8 @@ A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profission
 O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, como o Atlas do Desenvolvimento Humano no Brasil e o Sistema de Indicadores de Percepção Social (SIPS). Essas bases contêm informações sobre emprego, renda, educação e desigualdades regionais.
  
  ## Atributos Relevantes da Base de Dados
-
+ 
+####**State of Data Brazil**
 | Atributo | Tipo | Subtipo | Descrição |
 |----------|------|---------|-----------|
 | Idade | Numérico | - | Idade exata do respondente |
