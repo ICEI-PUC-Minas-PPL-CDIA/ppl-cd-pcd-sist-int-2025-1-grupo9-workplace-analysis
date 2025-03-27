@@ -168,17 +168,7 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Acesso a mentorias e suporte na empresa | Categórico | Nominal | Se há programas de mentoria ou suporte para trabalhadores mais velhos (Sim, Não) |
 
 #### **Base do IPEA**
-| Atributo               | Descrição                                      | Tipo de Dado   |
-|------------------------|-----------------------------------------------|----------------|
-| idade                  | Idade do trabalhador                          | Numérico       |
-| genero                 | Gênero do trabalhador                         | Categórico     |
-| raca_cor               | Raça/cor do trabalhador                       | Categórico     |
-| escolaridade           | Nível de escolaridade                         | Categórico     |
-| rendimento             | Rendimento mensal do trabalhador              | Numérico       |
-| ocupacao               | Ocupação do trabalhador                       | Categórico     |
-| setor                  | Setor de atuação                              | Categórico     |
-| regiao                 | Região do Brasil onde atua                    | Categórico     |
-| indice_desenvolvimento | Índice de desenvolvimento humano (IDH)        | Numérico       |
+
 
 #### Base do IBGE
 | Atributo               | Descrição                                      | Tipo de Dado   |
