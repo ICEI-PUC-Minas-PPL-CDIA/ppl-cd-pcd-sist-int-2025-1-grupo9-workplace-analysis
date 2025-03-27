@@ -106,11 +106,9 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 
 ###    Justificativas
-O etarismo é uma forma de discirminação frequentemente ignorada, mas que afeta milhões de pessoas em diferentes fases da vida, especialmente idosos e jovens. O projeto Brazilian Workplace Analysis, busca conscientizar a sociedade sobre o etarismo, pois essa discriminação limita oportunidades e reforça desigualdades. Ao reconhecer o etarismo como um problema real, a sociedade pode trabalhar para eliminá-lo e criar um ambiente mais inclusivo para todas as gerações.
+O projeto de um sistema inteligente para enfrentar o etarismo no mercado de dados é uma iniciativa essencial para promover a inclusão e a equidade no setor. Profissionais mais experientes frequentemente enfrentam barreiras na busca por oportunidades, e essa solução tecnológica busca reduzir esse preconceito.
 
-No setor de dados, essa discriminação se torna ainda mais evidente devido a rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores sênior, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência. Dessa forma, este estudo se torna essencial para formar um debate amplo sobre políticas de inclusão e para incentivar empresas a adotar medidas que promovam a igualdade de oportunidades, independente da faixa etária.
-
-O Uso de tecnologias artificiais, Gráficos do IBGE, dados de fontes como a PNAD contínua(Pesquisa do IBGE que analisa o mercado de trabalho no Brasil), para buscar informações e formas de solucionar essa desvalorização dos trabalhadores sênior.
+O sistema será capaz de identificar padrões de discriminação etária em processos seletivos, utilizando inteligência artificial para analisar dados e sugerir melhorias nos critérios de recrutamento. Também poderá auxiliar empresas na formulação de políticas mais inclusivas, ajudando a valorizar profissionais experientes e sua contribuição ao mercado.
 
 
 
