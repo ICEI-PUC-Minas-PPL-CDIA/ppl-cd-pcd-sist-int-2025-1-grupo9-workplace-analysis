@@ -19,7 +19,8 @@
 Professores:
 
 **Prof. Hugo Bastos de Paula**
-  **Prof. Hayala Nepomuceno Curto**
+
+**Prof. Hayala Nepomuceno Curto**
 
 
 ---
