@@ -190,6 +190,49 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
 
+#### Bases Unificadas
+## Dicionário de Dados - Estado dos Dados Brasil (Unificação Moderada)
+
+| Atributo | Tipo de Dado | Descrição |
+|----------|---------------|-----------|
+| Idade | Numérico | Idade exata do entrevistado |
+| Faixa etária | Categórico (Ordinal) | Faixa de idade (ex: 30-34, 35-39, 55+) |
+| Gênero | Categórico (Nominal) | Identidade de gênero do entrevistado |
+| Raça/Cor/Etnia | Categórico (Nominal) | Autodeclaração racial ou étnica |
+| Pessoa com deficiência (PCD) | Categórico (Nominal) | Indica se a pessoa possui deficiência |
+| Experiência profissional (anos) | Numérico | Total de anos de experiência profissional |
+| Área de atuação profissional | Categórico (Nominal) | Campo de trabalho (ex: Engenharia, Dados) |
+| Escolaridade | Categórico (Ordinal) | Nível educacional mais alto alcançado |
+| Salário (faixa ou média) | Numérico | Faixa salarial mensal ou média (individual) |
+| Modelo de trabalho | Categórico (Nominal) | Presencial, remoto ou híbrido |
+| Tipo de empresa | Categórico (Nominal) | Pública, privada, startup, autônomo |
+| Tamanho da empresa | Categórico (Ordinal) | Pequena, média ou grande empresa |
+| Vínculo empregatício (classificação IBGE) | Categórico (Nominal) | Ex: com carteira, sem carteira, público, conta própria, empregador |
+| Formalidade do emprego | Categórico (Nominal) | Se o trabalho é formal ou informal |
+| Satisfação profissional | Categórico (Ordinal) | Nível de satisfação com a carreira |
+| Oportunidades de promoção | Categórico (Ordinal) | Percepção sobre chances de crescimento |
+| Já sofreu discriminação por idade? | Categórico (Nominal) | Se a pessoa sofreu discriminação direta |
+| Tipo de discriminação por idade | Categórico (Nominal) | Forma que a discriminação ocorreu |
+| Experiência profissional prejudicada (por etarismo) | Categórico (Nominal) | Se a idade já impactou a carreira |
+| Motivo da experiência prejudicada | Categórico (Nominal) | Causa atribuída da discriminação |
+| Adequação às novas tecnologias | Categórico (Ordinal) | Dificuldade percebida com tecnologias novas |
+| Acesso a treinamentos | Categórico (Ordinal) | Frequência de cursos oferecidos pela empresa |
+| Frequência de atualização profissional | Categórico (Ordinal) | Frequência com que o profissional busca capacitação |
+| Sentimento de valorização na empresa (55+) | Categórico (Ordinal) | Nível de valorização percebido no trabalho |
+| Acesso a mentorias e suporte | Categórico (Nominal) | Se há programas de apoio à carreira |
+| Flexibilidade no trabalho (55+) | Categórico (Nominal) | Se há opções de flexibilidade para mais velhos |
+| Incentivo à diversidade etária na empresa | Categórico (Nominal) | Se a empresa promove inclusão etária |
+| Planos de aposentadoria e transição de carreira | Categórico (Nominal) | Se a empresa oferece suporte para transição ou aposentadoria |
+| Barreiras para recolocação profissional | Categórico (Nominal) | Dificuldades enfrentadas para conseguir emprego |
+| Rendimento médio (60+) | Numérico | Rendimento médio de pessoas com mais de 60 anos |
+| Horas trabalhadas (60+) | Numérico | Média de horas semanais no trabalho principal |
+| Informalidade (60+) | Numérico | Percentual de trabalhadores 60+ em empregos informais |
+| Participação no mercado (60+) | Numérico | Taxa de participação no mercado de trabalho |
+| Taxa de desemprego (60+) | Numérico | Percentual de desempregados com 60+ |
+| Subutilização da força de trabalho (60+) | Numérico | Percentual de subutilização entre idosos |
+| Ocupados (60+) | Numérico | Número total de trabalhadores 60+ ocupados |
+| Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados |
+
 ## Descrição de Dados
 
 ### Dados Numéricos
