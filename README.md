@@ -13,7 +13,8 @@ O objetivo deste projeto é desenvolver um sistema inteligente de análise e mon
 ## Professor 
 
 **Prof. Hugo Bastos de Paula**
-** Prof. Hayala Nepomuceno Curto**
+
+**Prof. Hayala Nepomuceno Curto**
 
 ## Instruções de utilização
 
