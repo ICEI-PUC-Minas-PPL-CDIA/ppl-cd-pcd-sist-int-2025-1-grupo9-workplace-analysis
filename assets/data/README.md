@@ -16,4 +16,5 @@ Os principais documentos a serem produzidos são:
 * `final_processed_data.csv`
   * base final processada, limpa e selecionada
 	
+Todas as bases de dados foram verificadas e provêm de fontes confiáveis, análisadas previamente no sprint 1.
 Demais artefatos que julgar pertinentes.
