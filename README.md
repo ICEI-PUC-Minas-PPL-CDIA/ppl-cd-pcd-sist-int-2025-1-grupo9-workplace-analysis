@@ -3,12 +3,12 @@
 O objetivo deste projeto é desenvolver um sistema inteligente de análise e monitoramento de diversidade e inclusão geracional em ambientes laborais. O produto consiste em uma plataforma tecnológica que utiliza algoritmos de inteligência artificial e machine learning para processar dados socioeconômicos, demográficos e laborais, com foco em trabalhadores seniores (acima de 50 anos). O sistema será capaz de identificar padrões de desigualdade, como dificuldades de recolocação, disparidades salariais e acesso limitado a cargos de liderança, além de fornecer insights personalizados para empresas e gestores públicos.
 ## Integrantes
 
-* Lucca Favilla Campos de Paula
 * Caio Soares Fernandes
 * Davi Miguel Almeida da Silva
-* Pedro Veloso Discacciati Neves
+*  Gabriel Lucas de Carvalho Santos
 * João Lucas Garcia Oliveira
-* Gabriel Lucas de Carvalho Santos
+* Lucca Favilla Campos de Paula
+* Pedro Veloso Discacciati Neves
   
 ## Professor 
 
