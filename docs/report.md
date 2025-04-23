@@ -233,45 +233,86 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Ocupados (60+) | Numérico | Número total de trabalhadores 60+ ocupados |
 | Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados |
 
-## Descrição de Dados
+## Descrição de Dados 
+import pandas as pd
+import zipfile
+import os
 
-### Dados Numéricos
+def estatisticas_numericas(df):
+    df_num = df.select_dtypes(include='number')
+    return {
+        "média": df_num.mean(),
+        "mediana": df_num.median(),
+        "moda": df_num.mode().iloc[0],
+        "desvio_padrão": df_num.std(),
+        "mínimo": df_num.min(),
+        "máximo": df_num.max(),
+        "coef_variação (%)": (df_num.std() / df_num.mean()) * 100
+    }
 
-#### Idade
-- **Média:** 38 anos  
-- **Desvio padrão:** 10 anos  
-- **Mínimo:** 18 anos  
-- **Máximo:** 70 anos  
-- **Quartis:**  
-  - Q1 = 30  
-  - Q2 (Mediana) = 38  
-  - Q3 = 45  
-- **Histograma:** Distribuição concentrada entre 25 e 50 anos.
+def estatisticas_categoricas(df):
+    df_cat = df.select_dtypes(include='object')
+    resultados = {}
+    for coluna in df_cat.columns:
+        resultados[coluna] = {
+            "moda": df_cat[coluna].mode().iloc[0] if not df_cat[coluna].mode().empty else None,
+            "valores_únicos": df_cat[coluna].nunique(),
+            "frequência": df_cat[coluna].value_counts().to_dict()
+        }
+    return resultados
 
-#### Salário
-- **Média:** R$ 8.000  
-- **Desvio padrão:** R$ 3.000  
-- **Mínimo:** R$ 1.500  
-- **Máximo:** R$ 50.000  
-- **Quartis:**  
-  - Q1 = R$ 5.000  
-  - Q2 (Mediana) = R$ 8.000  
-  - Q3 = R$ 12.000  
-- **Histograma:** Distribuição assimétrica com outliers acima de R$ 20.000.
+def imprimir_resultados(nome_base, num_stats, cat_stats):
+    print(f"\n================== {nome_base} ==================")
 
-### Dados Categóricos
+    print("\n--- VARIÁVEIS NUMÉRICAS ---")
+    for chave, valor in num_stats.items():
+        print(f"\n{chave.upper()}:\n{valor}")
 
-#### Gênero
-- **Moda:** Masculino (60%)
-- **Categorias:** Masculino, Feminino, Outros
+    print("\n--- VARIÁVEIS CATEGÓRICAS ---")
+    for col, stat in cat_stats.items():
+        print(f"\nColuna: {col}")
+        print(f"Moda: {stat['moda']}")
+        print(f"Nº de valores únicos: {stat['valores_únicos']}")
+        print(f"Frequência:\n{stat['frequência']}")
 
-#### Setor
-- **Moda:** Tecnologia (35%)
-- **Categorias:** Tecnologia, Finanças, Saúde, Educação, Outros
+# ========== BASE STATE OF DATA ==========
+with zipfile.ZipFile("State_of_data_BR_2023_Kaggle - df_survey_2023.csv.zip", 'r') as zip_ref:
+    zip_ref.extractall("dados_state")
+csv_file = [f for f in os.listdir("dados_state") if f.endswith(".csv")][0]
+csv_path = os.path.join("dados_state", csv_file)
 
-#### Escolaridade
-- **Moda:** Ensino Superior Completo (70%)
-- **Categorias:** Ensino Médio, Graduação, Pós-Graduação, Doutorado
+colunas_state = [
+    "Idade", "Faixa etária", "Gênero", "Cor/Raça/Etnia", "PCD",
+    "Experiência preconceituosa", "Motivo da experiência prejudicada", "Anos de experiência",
+    "Área de atuação", "Nível de escolaridade", "Salário", "Tipo de empresa",
+    "Tamanho da empresa", "Modelo de trabalho", "Satisfação profissional", "Oportunidades de promoção",
+    "Já sofreu discriminação por idade?", "Tipo de discriminação por idade", "Adequação às novas tecnologias",
+    "Incentivo à diversidade etária na empresa", "Planos de aposentadoria e transição de carreira",
+    "Flexibilidade de trabalho para profissionais com mais de 55 anos",
+    "Acesso a treinamentos e capacitações", "Frequência de atualização profissional",
+    "Barreiras para recolocação profissional", "Sentimento de valorização na empresa",
+    "Acesso a mentorias e suporte na empresa"
+]
+
+df_state = pd.read_csv(csv_path, usecols=lambda x: x in colunas_state)
+num_state = estatisticas_numericas(df_state)
+cat_state = estatisticas_categoricas(df_state)
+imprimir_resultados("State of Data", num_state, cat_state)
+
+# ========== BASE IPEA ==========
+df_ipea = pd.read_excel("Base de Dados IPEA.xlsx", sheet_name=0)
+df_ipea = df_ipea.apply(pd.to_numeric, errors='ignore')
+num_ipea = estatisticas_numericas(df_ipea)
+cat_ipea = estatisticas_categoricas(df_ipea)
+imprimir_resultados("Base IPEA", num_ipea, cat_ipea)
+
+# ========== BASE IBGE ==========
+df_ibge = pd.read_excel("Tabela 1.8 (AtivPos_BR).xls", sheet_name=0)
+df_ibge = df_ibge.apply(pd.to_numeric, errors='ignore')
+num_ibge = estatisticas_numericas(df_ibge)
+cat_ibge = estatisticas_categoricas(df_ibge)
+imprimir_resultados("Base IBGE", num_ibge, cat_ibge)
+
 
 
 ## Preparação dos dados
