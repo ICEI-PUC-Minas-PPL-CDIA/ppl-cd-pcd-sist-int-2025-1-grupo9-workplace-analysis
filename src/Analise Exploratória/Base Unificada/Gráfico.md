@@ -1,0 +1,12 @@
+Gráfico 1 - Profissionais 55+ por Área de Atuação (gráfico de barras)
+![output (7)](https://github.com/user-attachments/assets/46b6b849-4cf1-4613-a88c-f50ba0beac0c)
+Gráfico 2 - Discriminação por Idade (gráfico de pizza)
+![output (8)](https://github.com/user-attachments/assets/18b499e8-3b4e-4a78-ac2a-18db3f9ac1f5)
+Gráfico 3 - Satisfação Profissional por Tipo de Empresa (boxplot)
+![output (9)](https://github.com/user-attachments/assets/9bcb3ae9-0484-4828-a54e-2e49c5b1e90c)
+Gráfico 4 - Salário Médio na Área de Dados (barras)
+![output (10)](https://github.com/user-attachments/assets/e304f08c-9afd-4c6d-97e9-0854184e7be9)
+Gráfico 5 - Idade vs Adequação às Tecnologias (dispersão)
+![output (11)](https://github.com/user-attachments/assets/b47c36d4-8391-4e9b-a224-6289eddf59a4)
+Gráfico 6 - Mapa de Calor de Correlações Numéricas
+![output (12)](https://github.com/user-attachments/assets/aed1be98-6067-4d2a-b59a-39156062ff2c)
