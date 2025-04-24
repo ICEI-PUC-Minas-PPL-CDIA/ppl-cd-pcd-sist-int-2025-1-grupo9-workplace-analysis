@@ -235,7 +235,117 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 
 ## Descrição de Dados 
 
+ # 📊 Análise Descritiva das Bases de Dados
 
+Este relatório apresenta uma análise descritiva de primeira ordem sobre três bases de dados utilizadas no projeto de ciência de dados **Brazilian Workplace Analysis**, com foco na inclusão e diversidade etária no mercado de trabalho brasileiro.
+
+---
+
+##  1. Base de Dados IPEA
+
+###  Estatísticas Numéricas
+
+- **Ano**:
+  - Média: 2020.50
+  - Desvio Padrão: 1.74
+  - Mínimo: 2018.0
+  - 1º Quartil (25%): 2019.0
+  - Mediana (50%): 2020.5
+  - 3º Quartil (75%): 2022.0
+  - Máximo: 2023.0
+
+- **Informalidade - mais de 60 anos**:
+  - Média: 55.08
+  - Desvio Padrão: 2.20
+  - Mínimo: 50.4
+  - 1º Quartil (25%): 54.77
+  - Mediana (50%): 55.25
+  - 3º Quartil (75%): 56.80
+  - Máximo: 57.8
+
+- **Taxa de participação - mais de 60 anos**:
+  - Média: 22.68
+  - Desvio Padrão: 1.49
+  - Mínimo: 19.5
+  - 1º Quartil (25%): 21.85
+  - Mediana (50%): 23.35
+  - 3º Quartil (75%): 23.73
+  - Máximo: 24.4
+
+###  Estatísticas Categóricas
+
+- **Sigla**:
+  - Moda: BR
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: BR (24)
+
+- **Brasil**:
+  - Moda: Brasil
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: Brasil (24)
+
+---
+
+##  2. Base de Dados IBGE (Tabela 1.8 - Atividade e Ocupação)
+
+###  Estatísticas Numéricas
+
+**Nenhuma variável numérica identificada nesta base.**
+
+###  Estatísticas Categóricas
+
+- **Ano**:
+  - Moda: 2022
+  - Nº de Categorias Distintas: 6
+  - Categoria mais frequente: 2022 (6)
+
+- **Unidade da Federação**:
+  - Moda: Brasil
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: Brasil (24)
+
+---
+
+##  3. Base "State of Data BR 2023"
+
+###  Estatísticas Numéricas
+
+- **Senioridade das vagas x Experiência**:
+  - Média: 0.18
+  - Desvio Padrão: 0.39
+  - Mínimo: 0.0
+  - 1º Quartil (25%): 0.0
+  - Mediana (50%): 0.0
+  - 3º Quartil (75%): 0.0
+  - Máximo: 1.0
+
+- **Satisfação na empresa atual**:
+  - Média: 0.61
+  - Desvio Padrão: 0.49
+  - Mínimo: 0.0
+  - 1º Quartil (25%): 0.0
+  - Mediana (50%): 1.0
+  - 3º Quartil (75%): 1.0
+  - Máximo: 1.0
+
+###  Estatísticas Categóricas
+
+- **Faixa idade**:
+  - Moda: 25-29
+  - Nº de Categorias Distintas: 9
+  - Categoria mais frequente: 25-29 (1654)
+
+- **Gênero**:
+  - Moda: Masculino
+  - Nº de Categorias Distintas: 4
+  - Categoria mais frequente: Masculino (3975)
+
+- **Raça/Cor/Etnia**:
+  - Moda: Branca
+  - Nº de Categorias Distintas: 7
+  - Categoria mais frequente: Branca (3414)
+
+---
 
 
 ## Preparação dos dados
