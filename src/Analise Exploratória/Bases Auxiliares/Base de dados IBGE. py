@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set(style="whitegrid")
+
+valores_ocupacao = [17.8, 17.9, 9.9, 44.4, 7.9, 2.1]
+
+labels = [
+    "Com carteira assinada",
+    "Sem carteira assinada",
+    "Militar/função pública",
+    "Conta própria",
+    "Empregador",
+    "Omissos"
+]
+
+#Gráfico
+plt.figure(figsize=(8, 8))
+plt.pie(valores_ocupacao, labels=labels, autopct='%1.1f%%', startangle=140)
+plt.title("Distribuição percentual por ocupação 55+", fontsize=14)
+plt.axis('equal')
+plt.show()
