@@ -234,84 +234,125 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados |
 
 ## Descrição de Dados 
-import pandas as pd
-import zipfile
-import os
 
-def estatisticas_numericas(df):
-    df_num = df.select_dtypes(include='number')
-    return {
-        "média": df_num.mean(),
-        "mediana": df_num.median(),
-        "moda": df_num.mode().iloc[0],
-        "desvio_padrão": df_num.std(),
-        "mínimo": df_num.min(),
-        "máximo": df_num.max(),
-        "coef_variação (%)": (df_num.std() / df_num.mean()) * 100
-    }
+#  Análise Descritiva das Bases de Dados
 
-def estatisticas_categoricas(df):
-    df_cat = df.select_dtypes(include='object')
-    resultados = {}
-    for coluna in df_cat.columns:
-        resultados[coluna] = {
-            "moda": df_cat[coluna].mode().iloc[0] if not df_cat[coluna].mode().empty else None,
-            "valores_únicos": df_cat[coluna].nunique(),
-            "frequência": df_cat[coluna].value_counts().to_dict()
-        }
-    return resultados
+Este relatório apresenta uma análise descritiva de primeira ordem sobre três bases de dados utilizadas no projeto de ciência de dados **Brazilian Workplace Analysis**, com foco na inclusão e diversidade etária no mercado de trabalho brasileiro.
 
-def imprimir_resultados(nome_base, num_stats, cat_stats):
-    print(f"\n================== {nome_base} ==================")
+---
 
-    print("\n--- VARIÁVEIS NUMÉRICAS ---")
-    for chave, valor in num_stats.items():
-        print(f"\n{chave.upper()}:\n{valor}")
+##  1. Base de Dados IPEA
 
-    print("\n--- VARIÁVEIS CATEGÓRICAS ---")
-    for col, stat in cat_stats.items():
-        print(f"\nColuna: {col}")
-        print(f"Moda: {stat['moda']}")
-        print(f"Nº de valores únicos: {stat['valores_únicos']}")
-        print(f"Frequência:\n{stat['frequência']}")
+###  Estatísticas Numéricas
 
-# ========== BASE STATE OF DATA ==========
-with zipfile.ZipFile("State_of_data_BR_2023_Kaggle - df_survey_2023.csv.zip", 'r') as zip_ref:
-    zip_ref.extractall("dados_state")
-csv_file = [f for f in os.listdir("dados_state") if f.endswith(".csv")][0]
-csv_path = os.path.join("dados_state", csv_file)
+- **Ano**:
+  - Média: 2020.50
+  - Desvio Padrão: 1.74
+  - Mínimo: 2018.0
+  - 1º Quartil (25%): 2019.0
+  - Mediana (50%): 2020.5
+  - 3º Quartil (75%): 2022.0
+  - Máximo: 2023.0
 
-colunas_state = [
-    "Idade", "Faixa etária", "Gênero", "Cor/Raça/Etnia", "PCD",
-    "Experiência preconceituosa", "Motivo da experiência prejudicada", "Anos de experiência",
-    "Área de atuação", "Nível de escolaridade", "Salário", "Tipo de empresa",
-    "Tamanho da empresa", "Modelo de trabalho", "Satisfação profissional", "Oportunidades de promoção",
-    "Já sofreu discriminação por idade?", "Tipo de discriminação por idade", "Adequação às novas tecnologias",
-    "Incentivo à diversidade etária na empresa", "Planos de aposentadoria e transição de carreira",
-    "Flexibilidade de trabalho para profissionais com mais de 55 anos",
-    "Acesso a treinamentos e capacitações", "Frequência de atualização profissional",
-    "Barreiras para recolocação profissional", "Sentimento de valorização na empresa",
-    "Acesso a mentorias e suporte na empresa"
-]
+- **Informalidade - mais de 60 anos**:
+  - Média: 55.08
+  - Desvio Padrão: 2.20
+  - Mínimo: 50.4
+  - 1º Quartil (25%): 54.77
+  - Mediana (50%): 55.25
+  - 3º Quartil (75%): 56.80
+  - Máximo: 57.8
 
-df_state = pd.read_csv(csv_path, usecols=lambda x: x in colunas_state)
-num_state = estatisticas_numericas(df_state)
-cat_state = estatisticas_categoricas(df_state)
-imprimir_resultados("State of Data", num_state, cat_state)
+- **Taxa de participação - mais de 60 anos**:
+  - Média: 22.68
+  - Desvio Padrão: 1.49
+  - Mínimo: 19.5
+  - 1º Quartil (25%): 21.85
+  - Mediana (50%): 23.35
+  - 3º Quartil (75%): 23.73
+  - Máximo: 24.4
 
-# ========== BASE IPEA ==========
-df_ipea = pd.read_excel("Base de Dados IPEA.xlsx", sheet_name=0)
-df_ipea = df_ipea.apply(pd.to_numeric, errors='ignore')
-num_ipea = estatisticas_numericas(df_ipea)
-cat_ipea = estatisticas_categoricas(df_ipea)
-imprimir_resultados("Base IPEA", num_ipea, cat_ipea)
+###  Estatísticas Categóricas
 
-# ========== BASE IBGE ==========
-df_ibge = pd.read_excel("Tabela 1.8 (AtivPos_BR).xls", sheet_name=0)
-df_ibge = df_ibge.apply(pd.to_numeric, errors='ignore')
-num_ibge = estatisticas_numericas(df_ibge)
-cat_ibge = estatisticas_categoricas(df_ibge)
-imprimir_resultados("Base IBGE", num_ibge, cat_ibge)
+- **Sigla**:
+  - Moda: BR
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: BR (24)
+
+- **Brasil**:
+  - Moda: Brasil
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: Brasil (24)
+
+---
+
+## 2. Base de Dados IBGE (Tabela 1.8 - Atividade e Ocupação)
+
+###  Estatísticas Numéricas
+
+**Nenhuma variável numérica identificada nesta base.**
+
+###  Estatísticas Categóricas
+
+- **Ano**:
+  - Moda: 2022
+  - Nº de Categorias Distintas: 6
+  - Categoria mais frequente: 2022 (6)
+
+- **Unidade da Federação**:
+  - Moda: Brasil
+  - Nº de Categorias Distintas: 1
+  - Categoria mais frequente: Brasil (24)
+
+---
+
+##  3. Base "State of Data BR 2023"
+
+###  Estatísticas Numéricas
+
+- **Senioridade das vagas x Experiência**:
+  - Média: 0.18
+  - Desvio Padrão: 0.39
+  - Mínimo: 0.0
+  - 1º Quartil (25%): 0.0
+  - Mediana (50%): 0.0
+  - 3º Quartil (75%): 0.0
+  - Máximo: 1.0
+
+- **Satisfação na empresa atual**:
+  - Média: 0.61
+  - Desvio Padrão: 0.49
+  - Mínimo: 0.0
+  - 1º Quartil (25%): 0.0
+  - Mediana (50%): 1.0
+  - 3º Quartil (75%): 1.0
+  - Máximo: 1.0
+
+###  Estatísticas Categóricas
+
+- **Faixa idade**:
+  - Moda: 25-29
+  - Nº de Categorias Distintas: 9
+  - Categoria mais frequente: 25-29 (1654)
+
+- **Gênero**:
+  - Moda: Masculino
+  - Nº de Categorias Distintas: 4
+  - Categoria mais frequente: Masculino (3975)
+
+- **Raça/Cor/Etnia**:
+  - Moda: Branca
+  - Nº de Categorias Distintas: 7
+  - Categoria mais frequente: Branca (3414)
+
+---
+
+##  Conclusões
+
+As análises descritivas oferecem uma visão clara sobre a distribuição das variáveis nas bases utilizadas, permitindo entender tanto características estruturais do mercado de trabalho quanto percepções individuais dos profissionais.
+
+> Recomendação: Utilizar essas estatísticas como base para testes de hipóteses, segmentação de dados e modelagem preditiva.
+
 
 
 
