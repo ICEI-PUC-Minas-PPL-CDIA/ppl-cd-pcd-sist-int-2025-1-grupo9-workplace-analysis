@@ -1,0 +1,35 @@
+✅1. Condição de decisão (linha de cima do quadrado)
+Exemplo:
+
+Copiar
+Editar
+Área de atuação profissional=Tecnologia
+🟢 Significa: o modelo está testando se a pessoa atua em Tecnologia.
+➡️ Se sim, o caminho segue para a esquerda
+➡️ Se não, vai para a direita
+
+Esse é o critério usado para dividir os dados naquele ponto.
+
+✅ 2. Classe final (class = X)
+Exemplo:
+
+ini
+Copiar
+Editar
+class = Sim
+🟢 Isso mostra a classe majoritária entre os registros que chegaram até aquele quadrado.
+
+Neste exemplo, a maioria das pessoas sofreu discriminação por idade.
+
+Essa é a previsão que a árvore faria para qualquer novo exemplo que parasse nesse quadrado.
+
+✅ 3. Cor do fundo do quadrado
+🟠 A cor representa a classe dominante:
+
+Uma cor específica para “Sim”
+
+Outra para “Não”
+
+Quanto mais intensa a cor, mais certeza o modelo tem naquela decisão (porque mais registros da mesma classe chegaram até ali).
+
+
