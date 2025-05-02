@@ -1,88 +1,49 @@
 import pandas as pd
 import numpy as np
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.preprocessing import LabelEncoder
-from sklearn import tree
-import graphviz
-from PIL import Image as PILImage
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.tree import plot_tree
 import matplotlib.pyplot as plt
 
-# Função para gerar a variável alvo com base em padrões realistas
-def gerar_discriminacao(row):
-    if row["Área de atuação profissional"] in ["Tecnologia", "Engenharia"] and row["Idade"] > 60:
-        return "Sim"
-    if row["Escolaridade"] == "Ensino médio" and row["Satisfação profissional"] == "Baixa":
-        return "Sim"
-    return "Não"
-
-# Gerar dados simulados com 1000 registros
-n = 1000
+# Simulação de dados baseados no dicionário da base unificada (por falta de acesso direto ao DataFrame original)
 np.random.seed(42)
+n = 500
 
-data_sim = {
+df = pd.DataFrame({
     "Idade": np.random.randint(55, 75, size=n),
-    "Gênero": np.random.choice(["Masculino", "Feminino"], size=n),
-    "Área de atuação profissional": np.random.choice(["Tecnologia", "Educação", "Saúde", "Administração", "Engenharia", "Comércio", "Serviços", "Jurídico"], size=n),
-    "Escolaridade": np.random.choice(["Ensino médio", "Superior completo", "Mestrado", "Doutorado"], size=n, p=[0.3, 0.4, 0.2, 0.1]),
+    "Escolaridade (n)": np.random.choice([1, 2, 3, 4], size=n),  # 1 = Graduação, ..., 4 = Doutorado
     "Modelo de trabalho": np.random.choice(["Presencial", "Remoto", "Híbrido"], size=n),
-    "Satisfação profissional": np.random.choice(["Baixa", "Média", "Alta"], size=n, p=[0.3, 0.4, 0.3]),
-    "Adequação às novas tecnologias": np.random.choice(["Baixa", "Média", "Alta"], size=n, p=[0.3, 0.4, 0.3]),
-    "Acesso a treinamentos": np.random.choice(["Raro", "Ocasional", "Frequente"], size=n),
-    "Flexibilidade no trabalho (55+)": np.random.choice(["Sim", "Não"], size=n),
-    "Incentivo à diversidade etária na empresa": np.random.choice(["Sim", "Não"], size=n),
-    "Tipo de empresa": np.random.choice(["Privada", "Pública", "Startup", "Autônomo"], size=n),
-    "Tamanho da empresa": np.random.choice(["Pequena", "Média", "Grande"], size=n),
-    "Vínculo empregatício (classificação IBGE)": np.random.choice(["Com carteira", "Sem carteira", "Conta própria", "Empregador", "Público"], size=n),
     "Formalidade do emprego": np.random.choice(["Formal", "Informal"], size=n),
-    "Sentimento de valorização na empresa (55+)": np.random.choice(["Baixo", "Médio", "Alto"], size=n, p=[0.3, 0.4, 0.3]),
-    "Acesso a mentorias e suporte": np.random.choice(["Sim", "Não"], size=n),
-    "Planos de aposentadoria e transição de carreira": np.random.choice(["Sim", "Não"], size=n)
-}
+    "Acesso a treinamentos (n)": np.random.choice([0, 1, 2], size=n),  # 0 = Não, ..., 2 = Sim
+    "Frequência de atualização profissional (n)": np.random.choice([0, 1, 2, 3], size=n),
+    "Sentimento de valorização na empresa (n)": np.random.choice([1, 2, 3, 4, 5], size=n)
+})
 
-# Criar DataFrame
-df = pd.DataFrame(data_sim)
-df["Já sofreu discriminação por idade?"] = df.apply(gerar_discriminacao, axis=1)
+# Conversão de categóricas para dummies
+df = pd.get_dummies(df, columns=["Modelo de trabalho", "Formalidade do emprego"], drop_first=True)
 
-# Pré-processamento
-X_dict = df.drop(columns=["Já sofreu discriminação por idade?"]).T.to_dict().values()
-vect = DictVectorizer(sparse=False)
-X = vect.fit_transform(X_dict)
+# Separando variáveis
+X = df.drop(columns=["Sentimento de valorização na empresa (n)"])
+y = df["Sentimento de valorização na empresa (n)"]
 
-le = LabelEncoder()
-y = le.fit_transform(df["Já sofreu discriminação por idade?"])
+# Divisão treino/teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# Treinamento da árvore sem limite de profundidade e com critérios mínimos
-model = DecisionTreeClassifier(
-    random_state=42,
-    criterion='entropy',
-    max_depth=None,
-    min_samples_split=2,
-    min_samples_leaf=1
-)
-model.fit(X, y)
+# Treinamento do modelo (árvore de regressão para valor ordinal)
+model = DecisionTreeRegressor(max_depth=5, random_state=42)
+model.fit(X_train, y_train)
 
-# Exportação da árvore no formato gráfico simples
-dot_data = tree.export_graphviz(
-    model,
-    out_file=None,
-    feature_names=vect.feature_names_,
-    class_names=le.classes_,
-    filled=True,
-    rounded=True,
-    impurity=False,
-    proportion=False,
-    label='none'
-)
+# Predição e métricas
+y_pred = model.predict(X_test)
+mae = mean_absolute_error(y_test, y_pred)
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+r2 = r2_score(y_test, y_pred)
 
-# Visualização
-graph = graphviz.Source(dot_data)
-graph.render("arvore_max_nos_simples", format="png", cleanup=True)
-
-# Exibir a imagem da árvore
-img = PILImage.open("arvore_max_nos_simples.png")
-plt.figure(figsize=(40, 32))
-plt.imshow(img)
-plt.axis('off')
-plt.title("Árvore de Decisão Ampliada (1000 registros, Máximo de Nós)", fontsize=20)
+# Visualização da árvore
+plt.figure(figsize=(20, 10))
+plot_tree(model, feature_names=X.columns, filled=True, rounded=True)
+plt.title("Árvore de Decisão - Predição do Sentimento de Valorização (55+)")
 plt.show()
+
+(mae, rmse, r2)
