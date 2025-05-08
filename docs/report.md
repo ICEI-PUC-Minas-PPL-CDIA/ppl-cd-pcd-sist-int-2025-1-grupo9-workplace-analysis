@@ -360,14 +360,78 @@ A preparação dos dados consiste dos seguintes passos:
 
 ## Indução de modelos
 
-### Modelo 1: Algoritmo
+## Modelo 1: Árvore de Decisão
 
-Substitua o título pelo nome do algoritmo que será utilizado. P. ex. árvore de decisão, rede neural, SVM, etc.
-Justifique a escolha do modelo.
-Apresente o processo utilizado para amostragem de dados (particionamento, cross-validation).
-Descreva os parâmetros utilizados. 
-Apresente trechos do código utilizado comentados. Se utilizou alguma ferramenta gráfica, apresente imagens
-com o fluxo de processamento.
+### Algoritmo Utilizado: Árvore de Decisão (Decision Tree Classifier)
+
+A árvore de decisão foi escolhida por sua **interpretação simples** e capacidade de explicar decisões por meio de **divisões lógicas em atributos**. Este modelo é especialmente útil em projetos sociais e de diversidade como o nosso, pois permite compreender os fatores que mais influenciam o **sentimento de valorização na empresa**, o que ajuda a embasar políticas organizacionais.
+
+---
+
+### Processo de Amostragem dos Dados
+
+Utilizamos a técnica de **divisão hold-out**:
+
+- **70% dos dados** foram utilizados para treinamento.
+- **30% restantes** foram utilizados para teste e validação do modelo.
+
+Essa estratégia garante uma avaliação básica da generalização sem a complexidade computacional da validação cruzada.
+
+---
+
+### Parâmetros Utilizados
+
+O modelo foi construído com os seguintes parâmetros:
+
+```python
+DecisionTreeClassifier(
+    criterion='entropy',    # usa entropia para medir impureza
+    max_depth=None,         # sem profundidade máxima (crescimento livre)
+    random_state=0          # garante reprodutibilidade
+)
+Trechos do Código Comentados
+python
+Copiar
+Editar
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+from sklearn.model_selection import train_test_split
+import pandas as pd
+import graphviz
+
+# Carrega a base de dados limpa
+df = pd.read_csv("base_unificada_limpa.csv")
+
+# Define atributos e variável-alvo
+features = [
+    "gênero", "faixa_etária", "pcd", "satisfação_profissional",
+    "área_de_atuacão", "nível_de_escolaridade", "tipo_de_empresa",
+    "acesso_a_treinamentos_e_capacitações:Imagens, Vídeos", 
+    "acesso_a_treinamentos_e_capacitações:Textos/Documentos, Imagens",
+    "oportunidades_de_promocao", "flexibilidade_de_trabalho_para_profissionais_50+",
+    # ... adicione todos os atributos relevantes
+]
+target = "sentimento_de_valorização_na_empresa"
+
+# Remove valores ausentes
+df_model = df[features + [target]].dropna()
+
+# Pré-processamento
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.preprocessing import LabelEncoder
+
+X_dict = df_model[features].to_dict(orient='records')
+vect = DictVectorizer(sparse=False)
+X = vect.fit_transform(X_dict)
+
+le = LabelEncoder()
+y = le.fit_transform(df_model[target])
+
+# Divisão em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+# Treinamento do modelo
+model = DecisionTreeClassifier(criterion='entropy', random_state=0)
+model.fit(X_train, y_train)
 
 ### Modelo 2: Algoritmo
 
