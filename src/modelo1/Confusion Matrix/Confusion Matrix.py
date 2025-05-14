@@ -1,47 +1,42 @@
 import pandas as pd
-import numpy as np
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import confusion_matrix
 import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("State_of_data_BR_2023_Kaggle-df_survey_2023_maior_50 - Worksheet.csv")
+df = pd.read_csv("base_unificada_limpa.csv")
 
-df.columns = [col[1].strip() if isinstance(col, tuple) else col for col in df.columns]
+#Remoção dos atributos que bugaram
+colunas_remover = [
+    "rendimento médio 60+", 
+    "participação no mercado 60+", 
+    "taxa de desemprego 60+"
+]
 
-# Alvo: experiência profissional afetada
-target_col = "('P1_e ', 'experiencia_profissional_prejudicada')"
-y_true_raw = df[target_col]
-y_true = y_true_raw.dropna()
-le = LabelEncoder()
-y_true_encoded = le.fit_transform(y_true)
+df = df.drop(columns=colunas_remover, errors='ignore')
+df = df.drop(columns=df.filter(like='60+').columns, errors='ignore')
+df = df.drop(columns=df.filter(regex='60\+').columns, errors='ignore')
 
-df_sim = df.loc[y_true.index]
+df_numerico = df.select_dtypes(include=["int64", "float64"])
+df_numerico = df_numerico.dropna(axis=1, thresh=int(len(df_numerico)*0.8))
 
-col_train_video = [col for col in df.columns if "Imagens, Vídeos" in col]
-col_satisf = [col for col in df.columns if "satisfação_profissional" in col]
-
-def simple_tree_rule(row):
-    train = any(row.get(col) == 1 for col in col_train_video)
-    satisf = any(row.get(col) == 0 for col in col_satisf)  # insatisfação
-    return 1 if train or satisf else 0
-
-y_pred_simulated = df_sim.apply(simple_tree_rule, axis=1)
-
-cm = confusion_matrix(y_true_encoded, y_pred_simulated)
-
-remover_indices = [7, 4, 2, 1]
-keep_indices = [i for i in range(len(le.classes_)) if i not in remover_indices]
-
-cm_filtered = cm[np.ix_(keep_indices, keep_indices)]
-short_labels_filtered = [f"P1_{i}" for i in keep_indices]
-
-# Plotagem da matriz de confusão filtrada
-plt.figure(figsize=(5.5, 4.5))
-sns.heatmap(cm_filtered, annot=True, fmt="d", cmap="Blues",
-            xticklabels=short_labels_filtered, yticklabels=short_labels_filtered)
-plt.xlabel("Previsto")
-plt.ylabel("Real")
-plt.title("Matriz de Confusão Filtrada - Experiência Profissional Afetada")
+plt.figure(figsize=(14,12))
+sns.heatmap(
+    df_numerico.corr().abs(),
+    annot=True,
+    fmt=".2f",
+    cmap="Blues",
+    vmin=0,
+    vmax=1,
+    square=True,
+    linewidths=0.5,
+    cbar_kws={"shrink": 0.8},
+    annot_kws={"size": 10}
+)
+plt.xticks(rotation=45, ha='right', fontsize=10)
+plt.yticks(rotation=0, fontsize=10)
+plt.title("Matriz de Confusão", fontsize=14) 
 plt.tight_layout()
 plt.show()
