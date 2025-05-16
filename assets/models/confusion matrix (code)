@@ -1,0 +1,15 @@
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Gerar a matriz de confusão
+conf_matrix_rf = confusion_matrix(y_test, y_pred_rf)
+
+# Plotar a matriz
+plt.figure(figsize=(6, 5))
+sns.heatmap(conf_matrix_rf, annot=True, fmt="d", cmap="Blues",
+            xticklabels=["Não", "Sim"], yticklabels=["Não", "Sim"])
+plt.xlabel("Previsto")
+plt.ylabel("Real")
+plt.title("Matriz de Confusão - Random Forest")
+plt.show()
