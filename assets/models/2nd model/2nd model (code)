@@ -59,4 +59,72 @@ for k in range(1, 11):
     print(confusion_matrix(y_test, y_pred))
 
 
-    
+## Modelo com Valor de K Mais Eficiente (K = 3)
+
+# ETAPA 1: Instalação (caso esteja no Google Colab)
+!pip install -U imbalanced-learn
+
+# ETAPA 2: Imports
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from imblearn.over_sampling import SMOTE
+from google.colab import files
+
+# ETAPA 3: Leitura dos dados
+uploaded = files.upload()
+df = pd.read_excel(next(iter(uploaded)))  # Ex: 'base_unificada_limpa.xlsx'
+
+# ETAPA 4: Pré-processamento
+df_model = df[df['idade'] >= 50].copy()
+
+target = 'já_sofreu_discriminação_por_idade?'
+
+features = [
+    'idade', 'faixa_etária', 'gênero', 'cor/raça/etnia', 'pcd',
+    'anos_de_experiência', 'área_de_atuação', 'nível_de_escolaridade',
+    'salário', 'tipo_de_empresa', 'tamanho_da_empresa',
+    'satisfação_profissional', 'oportunidades_de_promoção',
+    'adequação_às_novas_tecnologias',
+    'incentivo_à_diversidade_etária_na_empresa',
+    'planos_de_aposentadoria_e_transição_de_carreira'
+]
+
+df_model = df_model[features + [target]].dropna()
+
+X = pd.get_dummies(df_model[features])
+y = df_model[target]
+
+# ETAPA 5: Balanceamento com SMOTE
+smote = SMOTE(random_state=42)
+X_resampled, y_resampled = smote.fit_resample(X, y)
+
+# ETAPA 6: Divisão treino/teste + escalonamento
+X_train, X_test, y_train, y_test = train_test_split(
+    X_resampled, y_resampled, test_size=0.3, random_state=42)
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# ETAPA 7: Modelo Final KNN com k = 3
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X_train_scaled, y_train)
+
+# ETAPA 8: Avaliação do Modelo
+y_pred = knn.predict(X_test_scaled)
+
+# Acurácia
+accuracy = accuracy_score(y_test, y_pred)
+print("Acurácia:", round(accuracy, 4))
+
+# Relatório de Classificação
+print("\nRelatório de Classificação:")
+print(classification_report(y_test, y_pred))
+
+# Matriz de Confusão
+print("\nMatriz de Confusão:")
+conf_matrix = confusion_matrix(y_test, y_pred)
+print(conf_matrix)
