@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────
+# ETAPA 1: Imports
+# ─────────────────────────────────────────────
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+
+# ─────────────────────────────────────────────
+# ETAPA 2: Leitura dos dados
+# ─────────────────────────────────────────────
+df = pd.read_excel("base_unificada_limpa.xlsx")
+df.fillna("Não", inplace=True)
+
+# ─────────────────────────────────────────────
+# ETAPA 3: Criação da variável alvo
+# ─────────────────────────────────────────────
+df["afetado_por_idade"] = df["experiência_prejudicada"].str.lower().str.contains("idade").astype(int)
+
+# ─────────────────────────────────────────────
+# ETAPA 4: Seleção de features
+# ─────────────────────────────────────────────
+features = [
+    'idade', 'gênero', 'cor/raça/etnia', 'faixa_etária', 'pcd',
+    'área_de_atuação', 'nível_de_escolaridade', 'tipo_de_empresa',
+    'acesso_a_treinamentos_e_capacitações',
+    'flexibilidade_de_trabalho_para_profissionais_55+',
+    'satisfação_profissional', 'adequação_às_novas_tecnologias',
+    'incentivo_à_diversidade_etária_na_empresa',
+    'planos_de_aposentadoria_e_transição_de_carreira',
+    'frequência_de_atualização_profissional',
+    'barreiras_para_recolocação_profissional',
+    'sentimento_de_valorização_na_empresa'
+]
+
+df_model = df[features + ['afetado_por_idade']].copy()
+
+# ─────────────────────────────────────────────
+# ETAPA 5: Codificação de variáveis categóricas
+# ─────────────────────────────────────────────
+for col in df_model.select_dtypes(include='object').columns:
+    le = LabelEncoder()
+    df_model[col] = le.fit_transform(df_model[col])
+
+# ─────────────────────────────────────────────
+# ETAPA 6: Treinamento da árvore de decisão
+# ─────────────────────────────────────────────
+X = df_model.drop("afetado_por_idade", axis=1)
+y = df_model["afetado_por_idade"]
+
+tree_model = DecisionTreeClassifier(max_depth=4, random_state=42)
+tree_model.fit(X, y)
+
+# ─────────────────────────────────────────────
+# ETAPA 7: Visualização da árvore
+# ─────────────────────────────────────────────
+plt.figure(figsize=(20, 10))
+plot_tree(tree_model, feature_names=X.columns, class_names=["Não", "Sim"], filled=True, fontsize=10)
+plt.title("Árvore de Decisão: Afetado por Idade no Mercado de Trabalho")
+plt.show()
