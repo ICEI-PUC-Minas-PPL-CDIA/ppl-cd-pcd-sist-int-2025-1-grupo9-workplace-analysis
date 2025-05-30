@@ -1,3 +1,6 @@
-
 ![WhatsApp Image 2025-05-23 at 09 05 20](https://github.com/user-attachments/assets/417957eb-f066-4fcd-8947-28a02fecdf4a)
 
+
+<b>Descrição da Matrix:</b>
+
+O modelo 2 utizidou o K-Nearest Neighbors (KNN) para prever se profissionais com 50 anos ou mais já sofreram discriminação por idade, com base em atributos pessoais e profissionais. Após carregar os dados, o código filtrou apenas os indivíduos 50+, seleciona variáveis relevantes (como faixa etária, escolaridade, satisfação profissional e incentivos à diversidade etária) e codifica variáveis categóricas. Para lidar com o desbalanceamento da variável alvo (já_sofreu_discriminação_por_idade?), o algoritmo SMOTE é utilizado, equilibrando as classes por meio de valores sintéticos. Os dados são então padronizados com StandardScaler e divididos em treino e teste. O modelo KNN é treinado com k=3 e os resultados são avaliados por meio da acurácia e da matriz de confusão. Essa matriz analisou as previsões corretas e incorretas entre as duas classes: “Sim” (sofreu discriminação) e “Não”. Os valores na diagonal principal indicam os acertos e aqueles fora da diagonal indicam erros do modelo. Em suma, o KNN se mostrou bastante eficaz na detecção de discriminação etária nesse grupo etário obtendo uma acurácia de 89%, resultado esse considerado ótimo, assim poucos valores ficaram fora da diagonal principal.
