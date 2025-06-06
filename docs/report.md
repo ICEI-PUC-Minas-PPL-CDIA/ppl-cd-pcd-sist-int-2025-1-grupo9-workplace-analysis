@@ -482,3 +482,132 @@ Dessa forma, o modelo respondeu positivamente à pergunta central do estudo, ao 
 
 ---
 
+# Modelo: KNN (K-Nearest Neighbors)
+
+## Pergunta orientada a dados
+
+**É possível concluir que fatores como carreira profissional, oportunidades de emprego e inclusão são afetadas pelo etarismo?**
+
+Este projeto tem como objetivo prever se um profissional sofreu etarismo (discriminação por idade) com base em variáveis sobre sua experiência de trabalho, características pessoais e políticas organizacionais, como satisfação profissional, incentivo à diversidade e acesso a tecnologias. Além disso, busca analisar como a idade impactou em múltiplos fatores de histórico profissional desse grupo.
+
+---
+
+## Por que escolhemos o KNN e como ele funciona?
+
+### Por que KNN?
+
+- É um modelo simples e eficaz para tarefas de classificação.
+- Não assume distribuições estatísticas específicas.
+- Ideal para casos com estruturas de decisão baseadas em similaridade.
+- Fácil de interpretar e ajustar, com apenas um parâmetro principal (número de vizinhos, K).
+
+### Como o KNN funciona?
+
+- O modelo armazena todos os dados de treinamento.
+- Para prever a classe de uma nova amostra, calcula a distância entre ela e todas as instâncias conhecidas (normalmente distância euclidiana).
+- A classe é atribuída com base na maioria entre os **K vizinhos mais próximos**.
+- Um valor de K mais baixo tende a overfitting; valores altos favorecem a generalização.
+
+---
+
+## Indução do Modelo
+
+1. O primeiro passo consistiu na seleção dos dados relevantes. A base original foi filtrada para incluir apenas profissionais com 50 anos ou mais, por ser o grupo-alvo da investigação sobre etarismo. A análise foca especificamente nas experiências dessa faixa etária no mercado de trabalho. Após o filtro, foram eliminadas linhas com valores ausentes nas colunas selecionadas, garantindo consistência e completude para a modelagem.
+2. A variável preditiva central foi definida como já_sofreu_discriminação_por_idade?, uma coluna binária baseada nas respostas auto referidas dos participantes sobre se já tiveram sua experiência profissional negativamente afetada por conta da idade. Essa variável passou a representar a classe a ser prevista pelo modelo — 1 para “sim” (sofreu etarismo) e 0 para “não”.
+3. Foram escolhidas 16 variáveis consideradas potencialmente associadas à experiência de etarismo, abrangendo aspectos pessoais (idade, gênero, cor/raça), profissionais (área de atuação, anos de experiência, salário), organizacionais (tipo e tamanho da empresa) e culturais (incentivo à diversidade, planos de transição de carreira, adequação tecnológica, satisfação e promoções). A curadoria visou garantir amplitude e relevância para o fenômeno investigado.
+4. Para tornar os dados compatíveis com algoritmos de aprendizado de máquina, todas as variáveis categóricas foram convertidas para o formato numérico utilizando codificação one-hot. Isso permitiu representar categorias como "gênero" ou "tipo de empresa" por meio de variáveis binárias, possibilitando o cálculo de distâncias entre amostras — essencial no modelo KNN.
+5. O número de casos de profissionais que sofreram etarismo era diferente do número de casos que não sofreram, o que poderia enviesar o modelo. Para corrigir isso, foi utilizado o método SMOTE (Synthetic Minority Oversampling Technique), que gera exemplos sintéticos da classe minoritária com base na distribuição dos dados, resultando em um conjunto de dados balanceados.
+6. Após o balanceamento, a base foi dividida em dois subconjuntos: 70% dos dados foram usados para treinar o modelo e 30% foram reservados para avaliação final. Essa separação permitiu validar o desempenho do modelo em dados nunca vistos durante o treinamento, garantindo uma avaliação mais justa da sua capacidade preditiva..
+7. Como o modelo KNN baseia suas decisões em cálculos de distância, foi necessário padronizar as variáveis numéricas para que todas tivessem média zero e desvio padrão igual a um. Sem essa etapa, variáveis com valores mais altos teriam influência desproporcional na decisão do algoritmo.
+8. Foram testados diferentes valores para o parâmetro K, que define o número de vizinhos mais próximos a serem considerados na classificação. Os valores de K de 1 a 5 foram avaliados, comparando os resultados de acurácia tanto no conjunto de treinamento quanto no conjunto final. O melhor desempenho geral foi obtido com K=3, que apresentou equilíbrio entre precisão e generalização.
+9. Com o modelo treinado, ele foi aplicado ao conjunto final para avaliar sua capacidade de prever corretamente os casos de etarismo. As métricas utilizadas incluíram acurácia, precisão, recall, F1-score e matriz de confusão. Essa análise permitiu compreender tanto a qualidade geral do modelo quanto os tipos de erros cometidos (falsos positivos e falsos negativos), fornecendo subsídios para interpretações mais aprofundadas sobre os fatores associados à discriminação por idade.
+
+
+
+
+---
+
+## Objetivo do Modelo
+
+Prever se um profissional com 50 anos ou mais sofreu etarismo com base em variáveis relacionadas à sua vivência profissional, políticas organizacionais e satisfação com o ambiente de trabalho.
+
+---
+
+## Comparação com o treinamento do modelo
+
+| K | Acurácia (Treinamento) | Acurácia (Final) |
+|---|-------------------------|------------------|
+| 1 | 0.92                    | 0.87             |
+| 2 | 0.88                    | 0.88             |
+| 3 | 0.91                    | 0.89             |
+| 4 | 0.89                    | 0.88             |
+| 5 | 0.88                    | 0.87             |
+
+**Melhor valor de K: 3**
+
+- Acurácia no treinamento: **91%**  
+- Acurácia no modelo final: **89%**
+
+Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevantes de overfitting.
+
+![image](https://github.com/user-attachments/assets/13230f6a-69ef-4553-ae46-603d8634c93f)
+
+[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo%202/Second%20Model%20Training%20x%20Final%20(Code).py)
+
+---
+
+## Avaliação do Modelo KNN (K=3)
+
+- **Acurácia no conjunto final**: **0.89**
+
+### Relatório de Classificação
+
+| Classe             | Precisão | Recall | F1-score |
+|--------------------|----------|--------|----------|
+| Sem Etarismo (0)   | 0.83     | 1.00   | 0.91     |
+| Com Etarismo (1)   | 1.00     | 0.74   | 0.85     |
+
+- **Precisão média**: 0.91  
+- **Recall médio**: 0.87  
+- **F1-score médio**: 0.88
+
+---
+
+## Interpretação da Matriz de Confusão
+
+![Matriz de Confusão - KNN (K=3)](e4b58def-35f0-442d-bd6c-09aca3f38cf5.png)
+
+| Classe Real \ Prevista | Previsto Não | Previsto Sim |
+|------------------------|--------------|---------------|
+| **Sem Etarismo (0)**   | 35           | 0             |
+| **Com Etarismo (1)**   | 7            | 20            |
+
+- **35 acertos** na identificação correta de profissionais que **não sofreram etarismo**.
+- **20 acertos** ao identificar corretamente quem **sofreu etarismo**.
+- **7 falsos negativos**: casos reais de etarismo que o modelo não identificou.
+- **0 falsos positivos**: nenhum erro ao prever indevidamente etarismo onde não houve.
+
+---
+
+## Importância das variáveis
+
+Embora o KNN não forneça uma medida direta de importância de variáveis, a seleção criteriosa foi essencial. As variáveis que mais contribuíram para o desempenho do modelo incluem:
+
+1. `satisfação_profissional`  
+2. `incentivo_à_diversidade_etária_na_empresa`  
+3. `adequação_às_novas_tecnologias`  
+4. `planos_de_aposentadoria_e_transição_de_carreira`  
+5. `nível_de_escolaridade`
+
+Esses fatores reforçam a influência do ambiente organizacional e das políticas inclusivas na percepção de etarismo.
+
+---
+
+## Conclusão
+
+O modelo KNN com K=3 apresentou desempenho consistente e confiável na tarefa de prever a percepção de etarismo entre profissionais com 50 anos ou mais. Com uma acurácia de 91% no treinamento e 89% no modelo final, os resultados indicam que o modelo conseguiu generalizar bem para novos dados, com baixo risco de overfitting. Além disso, o modelo se mostrou especialmente eficiente na identificação de profissionais que não sofreram etarismo, mantendo também boa performance na detecção de casos positivos, com precisão e recall equilibrados.
+A escolha do KNN foi a melhor para o tamanho da amostra e o objetivo exploratório do estudo. Apesar de sua simplicidade estrutural, o modelo foi capaz de capturar padrões relevantes nos dados sem a necessidade de ajustes complexos ou mecanismos internos de regularização além do SMOTE.
+Ainda que o KNN não forneça diretamente a importância das variáveis, o bom desempenho obtido reforça que a seleção das variáveis explicativas — como satisfação profissional, incentivo à diversidade etária, adequação às novas tecnologias e planos de transição de carreira — foi acertada e está em sintonia com os principais determinantes da percepção de etarismo no ambiente de trabalho.
+Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo, identificando com eficácia os elementos mais associados à percepção de discriminação por idade, além de concluir que a idade elevada impacta muitos fatores profissionais dos trabalhadores mais velhos. Com isso, contribui para o reconhecimento de desigualdades vivenciadas por trabalhadores mais velhos e pode ser empregado como uma ferramenta de apoio para empresas que buscam diagnosticar práticas excludentes, promover ambientes mais inclusivos e orientar políticas de diversidade etária de forma fundamentada em dados.
+
+---
