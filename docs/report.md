@@ -575,7 +575,8 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ## Interpretação da Matriz de Confusão
 
-[Matriz de Confusão](assets/models/2nd model/confusion matrix preview model 2 (image).md)
+![image](https://github.com/user-attachments/assets/827f1562-bcb8-4fef-b417-3c4f89881d02)
+
 
 | Classe Real \ Prevista | Previsto Não | Previsto Sim |
 |------------------------|--------------|---------------|
