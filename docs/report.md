@@ -359,3 +359,126 @@ A preparação dos dados consiste dos seguintes passos:
 
 ---
 
+# Modelo: Random Forest
+
+## Pergunta orientada a dados
+
+**A idade é um fator que prejudica a experiência profissional dos trabalhadores?**
+
+Este projeto tem como objetivo prever se um profissional sofreu etarismo (discriminação por idade) com base em dados sobre sua situação profissional, nível de escolaridade, políticas de diversidade da empresa, entre outros fatores.
+
+---
+
+## Por que escolhemos o Random Forest e como ele funciona?
+
+### Por que Random Forest?
+
+· É um modelo de classificação robusto e de alto desempenho.  
+· Trabalha bem com dados tabulares com variáveis numéricas e categóricas.  
+· Reduz o risco de overfitting ao combinar várias árvores de decisão (ensemble).  
+· Permite interpretar a importância das variáveis.  
+
+### Como o Random Forest funciona?
+
+· Constrói múltiplas árvores de decisão a partir de subconjuntos aleatórios dos dados e das variáveis.  
+· Cada árvore faz uma previsão individual, e a classe final é decidida por votação da maioria.  
+· Isso aumenta a precisão e a estabilidade das previsões.  
+
+---
+
+## Indução do Modelo
+
+1. A indução teve início com a leitura da base de dados, composta por informações de profissionais relacionadas a características pessoais, trajetória profissional e percepções sobre o ambiente de trabalho.  
+2. Em seguida, foram criadas variáveis essenciais para a análise, incluindo a variável “grupo_etário”, classificando profissionais com 50 anos ou mais, e a variável “alvo” que representa o etarismo, construída a partir dos relatos de experiências negativas atribuídas à idade.  
+3. Após isso, houve a seleção dos atributos mais relevantes para a modelagem, priorizando variáveis ligadas a políticas de diversidade, programas de valorização profissional, acesso a promoções, adequação tecnológica e outras dimensões organizacionais.  
+4. Com os atributos definidos, foi necessário transformar as variáveis categóricas em formato numérico, utilizando técnicas de codificação para que os algoritmos pudessem interpretá-las corretamente.  
+5. Devido ao desequilíbrio entre os casos de profissionais que relataram etarismo e os que não relataram, aplicou-se o método SMOTE, que gera amostras sintéticas para equilibrar as classes e evitar o viés do modelo.  
+6. A base balanceada foi então dividida em dois subconjuntos: 70% dos dados foram destinados ao treinamento do modelo, e os 30% restantes, ao final, garantindo uma avaliação justa do desempenho.  
+7. O modelo escolhido para a etapa de treinamento foi o RandomForestClassifier, que combina várias árvores de decisão para obter melhores resultados em problemas com múltiplas variáveis.  
+8. O desempenho do modelo foi avaliado com métricas como acurácia, precisão, recall, F1-score e matriz de confusão, possibilitando uma análise quantitativa da sua eficácia em classificar corretamente os casos de etarismo.  
+9. Por fim, foram analisadas as árvores que compõem o modelo e a importância atribuída a cada variável, permitindo interpretar quais fatores mais influenciaram nas decisões do algoritmo e fornecendo insights sobre os elementos mais associados à discriminação etária no ambiente de trabalho.  
+
+---
+
+## Objetivo do Modelo
+
+O objetivo do modelo é prever se um profissional sofreu etarismo, com base em variáveis relacionadas à sua experiência de trabalho, cultura organizacional e suporte ao desenvolvimento contínuo.
+
+---
+
+## Comparação com o treinamento do modelo
+
+Para avaliar a capacidade de generalização do modelo, comparamos a acurácia nos dados de treinamento com os dados finais. Essa análise permite verificar possíveis problemas de overfitting ou underfitting.
+
+A acurácia do modelo Random Forest nos conjuntos de treinamento foi: 0,81 e no modelo final: 0,72. Isso indica que o modelo teve um bom desempenho nos dados em que foi treinado, porém utilizou dados falsos em um primeiro momento. Isso sugere que o modelo pode ter aprendido padrões incorretos ou ruído desses dados — ou seja, ele se adaptou demais ao conjunto de treino, inclusive aos erros. Isso é um sinal clássico de overfitting, que posteriormente foi corrigido para o modelo final.
+
+![image](https://github.com/user-attachments/assets/59ebc3ab-cfc5-4552-8d17-974c15fbfd22)
+
+[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo%201/First%20Model%20Training%20x%20Final%20(Code).py)
+
+---
+
+## Avaliação do Modelo Random Forest
+
+**Acurácia no treinamento:** 0.81  
+**Acurácia final:** 0.72  
+
+Essa diferença indica um leve overfitting, mas o modelo ainda apresenta boa generalização.
+
+---
+
+## Interpretação dos resultados
+
+A análise dos valores de acurácia obtidos permite as seguintes conclusões:
+
+· Acurácia no treinamento: 0.81  
+· Acurácia final: 0.72  
+· A diferença entre treino e o modelo final sugere um leve overfitting, mas o desempenho geral ainda é aceitável.  
+· O modelo tem boa capacidade de identificar etarismo (recall de 0.80), com maior dificuldade na identificação de casos negativos (sem etarismo).
+
+---
+
+## Resultados obtidos
+
+**Acurácia final:** 0.72  
+
+### Relatório de classificação
+
+| Classe             | Precisão | Recall | F1-score | Suporte |
+|--------------------|----------|--------|----------|---------|
+| Sem Etarismo (0)   | 0.76     | 0.65   | 0.70     | 945     |
+| Com Etarismo (1)   | 0.70     | 0.80   | 0.74     | 966     |
+| Média Macro        | 0.73     | 0.72   | 0.72     | 1911    |
+| Média Ponderada    | 0.73     | 0.72   | 0.72     | 1911    |
+
+### Interpretação da matriz:
+
+· 610 acertos em identificar corretamente casos sem etarismo.  
+· 772 acertos na identificação de casos com etarismo.  
+· 335 falsos positivos: pessoas sem etarismo classificadas incorretamente como vítimas.  
+· 194 falsos negativos: pessoas com etarismo não reconhecidas pelo modelo.  
+
+---
+
+## Importância das variáveis
+
+As variáveis mais relevantes para o modelo foram:
+
+1. sentimento_de_valorização_na_empresa  
+2. incentivo_à_diversidade_etária_na_empresa  
+3. barreiras_para_recolocação_profissional  
+4. adequação_às_novas_tecnologias  
+5. satisfação_profissional  
+
+Essas variáveis demonstram o papel da cultura organizacional, valorização interna e suporte à atualização contínua na percepção de etarismo no ambiente de trabalho.
+
+---
+
+## Conclusão
+
+O modelo Random Forest demonstrou desempenho satisfatório na tarefa de identificar percepções de etarismo entre profissionais com 50 anos ou mais. Com uma acurácia de 81% no conjunto de treinamento e 72% no modelo final, observou-se um leve overfitting, mas ainda dentro de um nível aceitável, indicando que o modelo consegue se adaptar bem aos novos dados e corrigir valores falsos.  
+A escolha do Random Forest foi um acerto, pois trata-se de um algoritmo robusto, capaz de lidar com variáveis categóricas e numéricas, além  de identificar padrões complexos sem exigir ajustes extensivos. Sua estrutura baseada em múltiplas árvores permite avaliar a importância de cada variável na tomada de decisão, o que contribuiu diretamente para a interpretação dos resultados. A análise da importância das variáveis revelou que fatores organizacionais, como políticas de diversidade etária, planos de carreira e satisfação profissional, tiveram peso significativo na predição da percepção de etarismo, o que reforça a relevância dessas dimensões na sociedade.  
+Dessa forma, o modelo respondeu positivamente à pergunta central do estudo, ao conseguir mapear, com base em dados objetivos, os principais fatores associados à percepção de discriminação por idade e confirmar as desigualdades enfrentadas por esse grupo. O modelo se mostra útil como uma ferramenta complementar para apoiar diagnósticos organizacionais, orientar políticas de diversidade e fomentar ambientes corporativos mais inclusivos para profissionais com idade avançada.
+
+---
+
