@@ -575,7 +575,7 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ## Interpretação da Matriz de Confusão
 
-![Matriz de Confusão - KNN (K=3)](e4b58def-35f0-442d-bd6c-09aca3f38cf5.png)
+[Matriz de Confusão](assets/models/2nd model/confusion matrix preview model 2 (image).md)
 
 | Classe Real \ Prevista | Previsto Não | Previsto Sim |
 |------------------------|--------------|---------------|
