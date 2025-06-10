@@ -49,21 +49,24 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
   - [Objetivos Específicos](#objetivos-específicos)
 - [Justificativas](#justificativas)
 - [Público Alvo](#público-alvo)
-- [Análise Exploratória de dados](#análise-exploratória-de-dados)
+- [Análise Exploratória dos dados](#análise-exploratória-dos-dados)
   - [Descrição das bases](#descrição-das-bases)
   - [Atributos relevantes da base de dados](#atributos-relevantes-da-base-de-dados)
     - [State of data Brazil](#state-of-data-brazil)
     - [Base do IPEA](#base-do-ipea)
-    - [Base do IBGE](#base-do-IBGE)
-- [Dicionário de dados - Estados do Brasil (Unificação Moderada)](#dicionário-de-dados)
-  - [Base unificada](#base-unificada)
+    - [Base do IBGE](#base-do-ibge)
+- [Dicionário de dados Estados do Brasil](#dicionário-de-dados-estados-do-brasil)
+  - [Bases unificada](#bases-unificada)
   - [Análise Descritiva das Bases de dados](#análise-descritiva-das-bases-de-dados)
-  - [1. Base de dados do IPEA](#1.-base-de-dados-do-ipea)
-    - [Estatística Numéricas](#estatísticas-numéricas)
-    - [Estatísticas Categóricas](#estatísticas-categóricas)
-  - [3. Base "State of Data BR 2023"](#3.-base-"state-of-data-BR-2023")
-    - [Estatísticas Numéricas](#estatísticas-numéricas)
-    - [Estatísticas Categóricas](#estatísticas-categóricas)
+  - [1 Base de dados do IPEA](#1-base-de-dados-do-ipea)
+    - [1 Estatística Numéricas](#1-estatísticas-numéricas)
+    - [1 Estatísticas Categóricas](#1-estatísticas-categóricas)
+  - [2 Base de Dados do IBGE](#2-base-de-dados-do-ibge)
+    - [2 Estatística Numéricas](#1-estatísticas-numéricas)
+    - [2 Estatísticas Categóricas](#1-estatísticas-categóricas)
+  - [3 Base State of Data BR 2023](#3-base-state-of-data-br-2023)
+    - [3 Estatísticas Numéricas](#3-estatísticas-numéricas)
+    - [3 Estatísticas Categóricas](#3-estatísticas-categóricas)
 - [Preparação dos dados ](#preparação-dos-dados)
 - [Modelo: Random Forest](#modelo:-random-forest)
   - [Pergunta orientada a dados](#pergunta-orientada-a-dados)
@@ -251,7 +254,7 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
 
 
-## Dicionário de Dados - Estado dos Dados Brasil (Unificação Moderada)
+## Dicionário de Dados Estados do Brasil 
 
 ### Bases Unificada
 | Atributo | Tipo de Dado | Descrição |
@@ -294,15 +297,15 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Ocupados (60+) | Numérico | Número total de trabalhadores 60+ ocupados |
 | Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados | 
 
-### 📊 Análise Descritiva das Bases de Dados
+### Análise Descritiva das Bases de Dados
 
 Este relatório apresenta uma análise descritiva de primeira ordem sobre três bases de dados utilizadas no projeto de ciência de dados **Brazilian Workplace Analysis**, com foco na inclusão e diversidade etária no mercado de trabalho brasileiro.
 
 ---
 
-###  1. Base de Dados IPEA
+###  1 Base de Dados do IPEA
 
-####  Estatísticas Numéricas
+####  1 Estatísticas Numéricas 
 
 - **Ano**:
   - Média: 2020.50
@@ -331,7 +334,7 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
   - 3º Quartil (75%): 23.73
   - Máximo: 24.4
 
-####  Estatísticas Categóricas
+####  1 Estatísticas Categóricas
 
 - **Sigla**:
   - Moda: BR
@@ -345,13 +348,13 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
 
 ---
 
-###  2. Base de Dados IBGE (Tabela 1.8 - Atividade e Ocupação)
+###  2 Base de Dados do IBGE 
 
-####  Estatísticas Numéricas
+####  2 Estatísticas Numéricas
 
 **Nenhuma variável numérica identificada nesta base.**
 
-####  Estatísticas Categóricas
+####  2 Estatísticas Categóricas
 
 - **Ano**:
   - Moda: 2022
@@ -365,9 +368,9 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
 
 ---
 
-###  3. Base "State of Data BR 2023"
+###  3 Base State of Data BR 2023
 
-####  Estatísticas Numéricas
+####  3 Estatísticas Numéricas
 
 - **Senioridade das vagas x Experiência**:
   - Média: 0.18
@@ -387,7 +390,7 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
   - 3º Quartil (75%): 1.0
   - Máximo: 1.0
 
-####  Estatísticas Categóricas
+####  3 Estatísticas Categóricas
 
 - **Faixa idade**:
   - Moda: 25-29
