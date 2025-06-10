@@ -30,7 +30,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-###	Resumo
+##	Resumo
 
 O projeto Brazilian Workplace Analysis tem como foco combater o etarismo no mercado de trabalho, utilizando tecnologias de inteligência artificial para analisar e interpretar dados socioeconômicos e laborais. O sistema busca identificar desafios enfrentados por trabalhadores seniores (acima de 50 anos), como dificuldades de recolocação, disparidades salariais e barreiras à inclusão. O objetivo principal é criar uma plataforma que processe grandes volumes de dados, gerando insights e recomendações para empresas e gestores públicos, com o intuito de fomentar práticas mais justas e inclusivas.
 
@@ -40,20 +40,21 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
 
 ---
 
-### Sumário
+## Sumário
 
 - [Introdução](#introdução)
-- [Objetivos](#objetivos)
-- [Metodologia](#metodologia)
-- [Desenvolvimento](#desenvolvimento)
-  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-  - [Etapas do Projeto](#etapas-do-projeto)
-- [Resultados](#resultados)
-- [Conclusão](#conclusão)
-- [Referências](#referências)
+- [Contextualização](#contextualização)
+- [Problema](#problema)
+- [Objetivo Geral](#objetivo-geral)
+  - [Objetivos Específicos](#objetivos-específicos)
+- [Justificativas](#justificativas)
+- [Público Alvo](#público-alvo)
+- [Análise Exploratória de dados](#análise-exploratória-de-dados)
+  - [Descrição das bases](#descrição-das-bases)
+  - [Atributos relevantes da base de dados](#atributos-relevantes-da-base-de-dados)
 
 
-###	Introdução
+##	Introdução
 
 O etarismo, ou discriminação etária, se consolida como um desafio persistente no mercado de trabalho, e o setor de dados não se exime desse problema.
 
@@ -66,7 +67,7 @@ Além disso, a rápida evolução das ferramentas e linguagens de programação 
 
 
  
-###    Contextualização
+##    Contextualização
 
 O "State of Data 2023" representa a maior base de dados dedicada aos especialistas em ciência de dados no Brasil, permitindo a análise da atual situação da área. Nesse sentido, esta é a quarta edição do panorama, na qual mais de 5.200 profissionais foram entrevistados. Portanto, diversos temas podem ser estudados por meio dessa base, incluindo questões raciais, inclusão de pessoas com deficiência, integração da comunidade LGBT e o tema selecionado para este projeto: o etarismo.
 
@@ -77,7 +78,7 @@ De acordo com o IBGE (2024), os trabalhadores acima de 55 anos representam mais 
 A aplicação de tecnologias como a inteligência artificial e a análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por trabalhadores seniores e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis utiliza dados de fontes confiáveis, como a PNAD Contínua, Rais, IPEA e IBGE, para mapear padrões de desigualdade e buscar informações que ajudem a solucionar a desvalorização desses profissionais. Dessa forma, é possível implementar ações práticas para promover a inclusão desses trabalhadores no mercado de trabalho no Brasil.
 
 
-###    Problema
+##    Problema
 
 No setor de dados, o etarismo se torna ainda mais evidente devido a uma rápida evolução das tecnologias e à opinião generalizada de que apenas as gerações mais jovens possuem capacidade de adaptação a essas mudanças. No entanto, essa percepção desconsidera o potencial estratégico dos trabalhadores sênior, que pode contribuir significativamente para o desenvolvimento do setor por meio de sua experiência.
 
@@ -88,14 +89,14 @@ Os esteriótipos como baixa produtividade, vulnerabilidade de saúde e dificulda
 
 
 
-###    Objetivo geral
+##    Objetivo geral
 
 Desenvolver um sistema inteligente que examine a influência do etarismo no mercado de dados, averiguando a forma de como a discriminação impacta na contratação, permanência e desenvolvimento dos profissionais mais experientes.
 
 Ademais o estudo busca compreender as causas e consequências referentes a este preconceito, a fim de propor estratégias e soluções  que busquem proporcionar um ambiente de trabalho mais inclusivo, equitativo e diversificado.
 
 
-####    Objetivos específicos
+###    Objetivos específicos
   
 
 - **Mapear os principais desafios** enfrentados pelos profissionais seniores, incluindo:  
@@ -118,7 +119,7 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 
 
-###    Justificativas
+##    Justificativas
 O projeto de um sistema inteligente para enfrentar o etarismo no mercado de dados é uma iniciativa essencial para promover a inclusão e a equidade no setor. Profissionais mais experientes frequentemente enfrentam barreiras na busca por oportunidades, e essa solução tecnológica busca reduzir esse preconceito.
 
 O sistema será capaz de identificar padrões de discriminação etária em processos seletivos, utilizando inteligência artificial para analisar dados e sugerir melhorias nos critérios de recrutamento. Também poderá auxiliar empresas na formulação de políticas mais inclusivas, ajudando a valorizar profissionais experientes e sua contribuição ao mercado.
@@ -139,7 +140,7 @@ Aqui está a descrição das bases de dados que serão utilizadas no projeto Bra
 
 
 
-## Descrição das Bases
+### Descrição das Bases
 
 1. State_of_Data_BR_2023
 A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profissionais de dados no Brasil. Ela contém informações sobre salários, ferramentas utilizadas, nível de experiência, formação acadêmica, entre outros aspectos.
@@ -147,7 +148,7 @@ A State_of_Data_BR_2023 é uma pesquisa anual que mapeia o perfil dos profission
 2. Base do IPEA
 O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, como o Atlas do Desenvolvimento Humano no Brasil e o Sistema de Indicadores de Percepção Social (SIPS). Essas bases contêm informações sobre emprego, renda, educação e desigualdades regionais.
  
- ## Atributos Relevantes da Base de Dados
+ ### Atributos Relevantes da Base de Dados
  
 ####**State of Data Brazil**
 | Atributo | Tipo | Subtipo | Descrição |
@@ -201,9 +202,10 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
 
-#### Bases Unificadas
+
 ## Dicionário de Dados - Estado dos Dados Brasil (Unificação Moderada)
 
+### Bases Unificada
 | Atributo | Tipo de Dado | Descrição |
 |----------|---------------|-----------|
 | Idade | Numérico | Idade exata do entrevistado |
@@ -242,19 +244,17 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Taxa de desemprego (60+) | Numérico | Percentual de desempregados com 60+ |
 | Subutilização da força de trabalho (60+) | Numérico | Percentual de subutilização entre idosos |
 | Ocupados (60+) | Numérico | Número total de trabalhadores 60+ ocupados |
-| Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados |
+| Desocupados (60+) | Numérico | Número total de trabalhadores 60+ desocupados | 
 
-## Descrição de Dados 
-
- # 📊 Análise Descritiva das Bases de Dados
+### 📊 Análise Descritiva das Bases de Dados
 
 Este relatório apresenta uma análise descritiva de primeira ordem sobre três bases de dados utilizadas no projeto de ciência de dados **Brazilian Workplace Analysis**, com foco na inclusão e diversidade etária no mercado de trabalho brasileiro.
 
 ---
 
-##  1. Base de Dados IPEA
+###  1. Base de Dados IPEA
 
-###  Estatísticas Numéricas
+####  Estatísticas Numéricas
 
 - **Ano**:
   - Média: 2020.50
@@ -283,7 +283,7 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
   - 3º Quartil (75%): 23.73
   - Máximo: 24.4
 
-###  Estatísticas Categóricas
+####  Estatísticas Categóricas
 
 - **Sigla**:
   - Moda: BR
@@ -297,13 +297,13 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
 
 ---
 
-##  2. Base de Dados IBGE (Tabela 1.8 - Atividade e Ocupação)
+###  2. Base de Dados IBGE (Tabela 1.8 - Atividade e Ocupação)
 
-###  Estatísticas Numéricas
+####  Estatísticas Numéricas
 
 **Nenhuma variável numérica identificada nesta base.**
 
-###  Estatísticas Categóricas
+####  Estatísticas Categóricas
 
 - **Ano**:
   - Moda: 2022
@@ -317,9 +317,9 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
 
 ---
 
-##  3. Base "State of Data BR 2023"
+###  3. Base "State of Data BR 2023"
 
-###  Estatísticas Numéricas
+####  Estatísticas Numéricas
 
 - **Senioridade das vagas x Experiência**:
   - Média: 0.18
@@ -339,7 +339,7 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
   - 3º Quartil (75%): 1.0
   - Máximo: 1.0
 
-###  Estatísticas Categóricas
+####  Estatísticas Categóricas
 
 - **Faixa idade**:
   - Moda: 25-29
@@ -370,9 +370,9 @@ A preparação dos dados consiste dos seguintes passos:
 
 ---
 
-# Modelo: Random Forest
+## Modelo: Random Forest
 
-## Pergunta orientada a dados
+### Pergunta orientada a dados
 
 **A idade é um fator que prejudica a experiência profissional dos trabalhadores?**
 
@@ -380,16 +380,16 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Por que escolhemos o Random Forest e como ele funciona?
+### Por que escolhemos o Random Forest e como ele funciona?
 
-### Por que Random Forest?
+#### Por que Random Forest?
 
 · É um modelo de classificação robusto e de alto desempenho.  
 · Trabalha bem com dados tabulares com variáveis numéricas e categóricas.  
 · Reduz o risco de overfitting ao combinar várias árvores de decisão (ensemble).  
 · Permite interpretar a importância das variáveis.  
 
-### Como o Random Forest funciona?
+#### Como o Random Forest funciona?
 
 · Constrói múltiplas árvores de decisão a partir de subconjuntos aleatórios dos dados e das variáveis.  
 · Cada árvore faz uma previsão individual, e a classe final é decidida por votação da maioria.  
@@ -397,7 +397,7 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Indução do Modelo
+### Indução do Modelo
 
 1. A indução teve início com a leitura da base de dados, composta por informações de profissionais relacionadas a características pessoais, trajetória profissional e percepções sobre o ambiente de trabalho.  
 2. Em seguida, foram criadas variáveis essenciais para a análise, incluindo a variável “grupo_etário”, classificando profissionais com 50 anos ou mais, e a variável “alvo” que representa o etarismo, construída a partir dos relatos de experiências negativas atribuídas à idade.  
@@ -411,13 +411,13 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Objetivo do Modelo
+### Objetivo do Modelo
 
 O objetivo do modelo é prever se um profissional sofreu etarismo, com base em variáveis relacionadas à sua experiência de trabalho, cultura organizacional e suporte ao desenvolvimento contínuo.
 
 ---
 
-## Comparação com o treinamento do modelo
+### Comparação com o treinamento do modelo
 
 Para avaliar a capacidade de generalização do modelo, comparamos a acurácia nos dados de treinamento com os dados finais. Essa análise permite verificar possíveis problemas de overfitting ou underfitting.
 
@@ -429,7 +429,7 @@ A acurácia do modelo Random Forest nos conjuntos de treinamento foi: 0,81 e no 
 
 ---
 
-## Avaliação do Modelo Random Forest
+### Avaliação do Modelo Random Forest
 
 **Acurácia no treinamento:** 0.81  
 **Acurácia final:** 0.72  
@@ -438,7 +438,7 @@ Essa diferença indica um leve overfitting, mas o modelo ainda apresenta boa gen
 
 ---
 
-## Interpretação dos resultados
+### Interpretação dos resultados
 
 A análise dos valores de acurácia obtidos permite as seguintes conclusões:
 
@@ -449,11 +449,11 @@ A análise dos valores de acurácia obtidos permite as seguintes conclusões:
 
 ---
 
-## Resultados obtidos
+### Resultados obtidos
 
 **Acurácia final:** 0.72  
 
-### Relatório de classificação
+#### Relatório de classificação
 
 | Classe             | Precisão | Recall | F1-score | Suporte |
 |--------------------|----------|--------|----------|---------|
@@ -462,7 +462,7 @@ A análise dos valores de acurácia obtidos permite as seguintes conclusões:
 | Média Macro        | 0.73     | 0.72   | 0.72     | 1911    |
 | Média Ponderada    | 0.73     | 0.72   | 0.72     | 1911    |
 
-### Interpretação da matriz:
+#### Interpretação da matriz:
 
 · 610 acertos em identificar corretamente casos sem etarismo.  
 · 772 acertos na identificação de casos com etarismo.  
@@ -471,7 +471,7 @@ A análise dos valores de acurácia obtidos permite as seguintes conclusões:
 
 ---
 
-## Importância das variáveis
+### Importância das variáveis
 
 As variáveis mais relevantes para o modelo foram:
 
@@ -485,7 +485,7 @@ Essas variáveis demonstram o papel da cultura organizacional, valorização int
 
 ---
 
-## Conclusão
+### Conclusão
 
 O modelo Random Forest demonstrou desempenho satisfatório na tarefa de identificar percepções de etarismo entre profissionais com 50 anos ou mais. Com uma acurácia de 81% no conjunto de treinamento e 72% no modelo final, observou-se um leve overfitting, mas ainda dentro de um nível aceitável, indicando que o modelo consegue se adaptar bem aos novos dados e corrigir valores falsos.  
 A escolha do Random Forest foi um acerto, pois trata-se de um algoritmo robusto, capaz de lidar com variáveis categóricas e numéricas, além  de identificar padrões complexos sem exigir ajustes extensivos. Sua estrutura baseada em múltiplas árvores permite avaliar a importância de cada variável na tomada de decisão, o que contribuiu diretamente para a interpretação dos resultados. A análise da importância das variáveis revelou que fatores organizacionais, como políticas de diversidade etária, planos de carreira e satisfação profissional, tiveram peso significativo na predição da percepção de etarismo, o que reforça a relevância dessas dimensões na sociedade.  
@@ -493,9 +493,9 @@ Dessa forma, o modelo respondeu positivamente à pergunta central do estudo, ao 
 
 ---
 
-# Modelo: KNN (K-Nearest Neighbors)
+## Modelo: KNN (K-Nearest Neighbors)
 
-## Pergunta orientada a dados
+### Pergunta orientada a dados
 
 **É possível concluir que fatores como carreira profissional, oportunidades de emprego e inclusão são afetadas pelo etarismo?**
 
@@ -503,16 +503,16 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Por que escolhemos o KNN e como ele funciona?
+### Por que escolhemos o KNN e como ele funciona?
 
-### Por que KNN?
+#### Por que KNN?
 
 - É um modelo simples e eficaz para tarefas de classificação.
 - Não assume distribuições estatísticas específicas.
 - Ideal para casos com estruturas de decisão baseadas em similaridade.
 - Fácil de interpretar e ajustar, com apenas um parâmetro principal (número de vizinhos, K).
 
-### Como o KNN funciona?
+#### Como o KNN funciona?
 
 - O modelo armazena todos os dados de treinamento.
 - Para prever a classe de uma nova amostra, calcula a distância entre ela e todas as instâncias conhecidas (normalmente distância euclidiana).
@@ -521,7 +521,7 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Indução do Modelo
+### Indução do Modelo
 
 1. O primeiro passo consistiu na seleção dos dados relevantes. A base original foi filtrada para incluir apenas profissionais com 50 anos ou mais, por ser o grupo-alvo da investigação sobre etarismo. A análise foca especificamente nas experiências dessa faixa etária no mercado de trabalho. Após o filtro, foram eliminadas linhas com valores ausentes nas colunas selecionadas, garantindo consistência e completude para a modelagem.
 2. A variável preditiva central foi definida como já_sofreu_discriminação_por_idade?, uma coluna binária baseada nas respostas auto referidas dos participantes sobre se já tiveram sua experiência profissional negativamente afetada por conta da idade. Essa variável passou a representar a classe a ser prevista pelo modelo — 1 para “sim” (sofreu etarismo) e 0 para “não”.
@@ -538,13 +538,13 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-## Objetivo do Modelo
+### Objetivo do Modelo
 
 Prever se um profissional com 50 anos ou mais sofreu etarismo com base em variáveis relacionadas à sua vivência profissional, políticas organizacionais e satisfação com o ambiente de trabalho.
 
 ---
 
-## Comparação com o treinamento do modelo
+### Comparação com o treinamento do modelo
 
 | K | Acurácia (Treinamento) | Acurácia (Final) |
 |---|-------------------------|------------------|
@@ -567,11 +567,11 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ---
 
-## Avaliação do Modelo KNN (K=3)
+### Avaliação do Modelo KNN (K=3)
 
 - **Acurácia no conjunto final**: **0.89**
 
-### Relatório de Classificação
+#### Relatório de Classificação
 
 | Classe             | Precisão | Recall | F1-score |
 |--------------------|----------|--------|----------|
@@ -584,7 +584,7 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ---
 
-## Interpretação da Matriz de Confusão
+### Interpretação da Matriz de Confusão
 
 ![image](https://github.com/user-attachments/assets/827f1562-bcb8-4fef-b417-3c4f89881d02)
 
@@ -601,7 +601,7 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ---
 
-## Importância das variáveis
+### Importância das variáveis
 
 Embora o KNN não forneça uma medida direta de importância de variáveis, a seleção criteriosa foi essencial. As variáveis que mais contribuíram para o desempenho do modelo incluem:
 
@@ -615,7 +615,7 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 ---
 
-## Conclusão
+### Conclusão
 
 O modelo KNN com K=3 apresentou desempenho consistente e confiável na tarefa de prever a percepção de etarismo entre profissionais com 50 anos ou mais. Com uma acurácia de 91% no treinamento e 89% no modelo final, os resultados indicam que o modelo conseguiu generalizar bem para novos dados, com baixo risco de overfitting. Além disso, o modelo se mostrou especialmente eficiente na identificação de profissionais que não sofreram etarismo, mantendo também boa performance na detecção de casos positivos, com precisão e recall equilibrados.
 A escolha do KNN foi a melhor para o tamanho da amostra e o objetivo exploratório do estudo. Apesar de sua simplicidade estrutural, o modelo foi capaz de capturar padrões relevantes nos dados sem a necessidade de ajustes complexos ou mecanismos internos de regularização além do SMOTE.
@@ -624,7 +624,7 @@ Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo
 
 ---
 
-# COMPARAÇÃO GERAL
+## COMPARAÇÃO GERAL
 
 | Aspecto | Random Forest | KNN (K=3) |
 |-----------------------------|-----------------------------------------------|--------------------------------------------------|
@@ -639,7 +639,7 @@ Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo
 
 ---
 
-# Desempenho Quantitativo
+### Desempenho Quantitativo
 
 | Métrica | Random Forest | KNN (K=3) |
 |----------------|----------------|-----------|
@@ -660,7 +660,7 @@ Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo
 
 ---
 
-# Capacidade de Interpretação
+### Capacidade de Interpretação
 
 | Elemento | Random Forest | KNN |
 |--------------------------|-----------------------------------------|-------------------------------------------|
@@ -670,7 +670,7 @@ Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo
 
 ---
 
-# Erros Cometidos
+### Erros Cometidos
 
 | Tipo de erro | Random Forest | KNN (K=3) |
 |------------------|----------------|-----------|
@@ -684,7 +684,7 @@ Portanto, o modelo KNN respondeu de forma positiva à pergunta central do estudo
 
 ---
 
-# Conclusões Comparativas
+### Conclusões Comparativas
 
 | Critério | Vencedor / Destaque |
 |-------------------------------------------|------------------------------------------------------|
