@@ -22,7 +22,6 @@ Professores:
 
 **Prof. Hayala Nepomuceno Curto**
 
-
 ---
 
 _Curso de Ciência de Dados, Unidade Praça da Liberdade_
@@ -40,6 +39,18 @@ A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (
 Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades relacionadas ao etarismo no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada.
 
 ---
+
+### Sumário
+
+- [Introdução](#introdução)
+- [Objetivos](#objetivos)
+- [Metodologia](#metodologia)
+- [Desenvolvimento](#desenvolvimento)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Etapas do Projeto](#etapas-do-projeto)
+- [Resultados](#resultados)
+- [Conclusão](#conclusão)
+- [Referências](#referências)
 
 
 ###	Introdução
