@@ -68,11 +68,11 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
     - [3 Estatísticas Numéricas](#3-estatísticas-numéricas)
     - [3 Estatísticas Categóricas](#3-estatísticas-categóricas)
 - [Preparação dos dados ](#preparação-dos-dados)
-- [Modelo: Random Forest](#modelo:-random-forest)
+- [Modelo Random Forest](#modelo-random-forest)
   - [Pergunta orientada a dados](#pergunta-orientada-a-dados)
-  - [Por que escolhemos o Random Forest e como ele funciona?](#por-que-escolhemos-o-random-forest-e-como-ele-funciona?)
-    - [Por que Random Forest?](#por-que-random-forest?)
-    - [Como o Random Forest funciona?](#como-o-random-forest-funciona?)
+  - [Por que escolhemos o Random Forest e como ele funciona](#por-que-escolhemos-o-random-forest-e-como-ele-funciona)
+    - [Por que Random Forest](#por-que-random-forest)
+    - [Como o Random Forest funciona](#como-o-random-forest-funciona)
   - [Indução do modelo](#indução-do-modelo)
   - [Objetivo do modelo](#objetivo-do-modelo)
   - [Comparação com o treinamento do modelo](#comparação-com-o-treinamento-do-modelo)
@@ -83,11 +83,11 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
     - [Interpretação da matriz](#interpretação-da-matriz)
   - [Importância das variáveis](#importância-das-variáveis)
   - [Conclusão](#conclusão)
-- [Modelo: KNN (K-Nearest Neighbors)](#modelo:-knn-(k-nearest-neighbors))
+- [Modelo K-Nearest Neighbors](#modelo-k-nearest-neighbors)
   - [Pergunta orientada a dados](#pergunta-orientada-a-dados)
-  - [Por que escolhemos o KNN e como ele funciona?](#por-que-escolhemos-o-knn-e-como-ele-funciona?)
-    - [Por que KNNt?](#por-que-knn?)
-    - [Como o KNN funciona?](#como-o-knn-funciona?)
+  - [Por que escolhemos o KNN e como ele funciona](#por-que-escolhemos-o-knn-e-como-ele-funciona)
+    - [Por que KNNt](#por-que-knn)
+    - [Como o KNN funciona](#como-o-knn-funciona)
   - [Indução do modelo](#indução-do-modelo)
   - [Objetivo do modelo](#objetivo-do-modelo)
   - [Comparação com o treinamento do modelo](#comparação-com-o-treinamento-do-modelo)
@@ -421,7 +421,7 @@ A preparação dos dados consiste dos seguintes passos:
 
 ---
 
-## Modelo: Random Forest
+## Modelo Random Forest
 
 ### Pergunta orientada a dados
 
@@ -431,16 +431,16 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 
 ---
 
-### Por que escolhemos o Random Forest e como ele funciona?
+### Por que escolhemos o Random Forest e como ele funciona
 
-#### Por que Random Forest?
+#### Por que Random Forest
 
 · É um modelo de classificação robusto e de alto desempenho.  
 · Trabalha bem com dados tabulares com variáveis numéricas e categóricas.  
 · Reduz o risco de overfitting ao combinar várias árvores de decisão (ensemble).  
 · Permite interpretar a importância das variáveis.  
 
-#### Como o Random Forest funciona?
+#### Como o Random Forest funciona
 
 · Constrói múltiplas árvores de decisão a partir de subconjuntos aleatórios dos dados e das variáveis.  
 · Cada árvore faz uma previsão individual, e a classe final é decidida por votação da maioria.  
@@ -544,26 +544,26 @@ Dessa forma, o modelo respondeu positivamente à pergunta central do estudo, ao 
 
 ---
 
-## Modelo: KNN (K-Nearest Neighbors)
+## Modelo K-Nearest Neighbors
 
 ### Pergunta orientada a dados
 
-**É possível concluir que fatores como carreira profissional, oportunidades de emprego e inclusão são afetadas pelo etarismo?**
+**É possível concluir que fatores como carreira profissional, oportunidades de emprego e inclusão são afetadas pelo etarismo**
 
 Este projeto tem como objetivo prever se um profissional sofreu etarismo (discriminação por idade) com base em variáveis sobre sua experiência de trabalho, características pessoais e políticas organizacionais, como satisfação profissional, incentivo à diversidade e acesso a tecnologias. Além disso, busca analisar como a idade impactou em múltiplos fatores de histórico profissional desse grupo.
 
 ---
 
-### Por que escolhemos o KNN e como ele funciona?
+### Por que escolhemos o KNN e como ele funciona
 
-#### Por que KNN?
+#### Por que KNN
 
 - É um modelo simples e eficaz para tarefas de classificação.
 - Não assume distribuições estatísticas específicas.
 - Ideal para casos com estruturas de decisão baseadas em similaridade.
 - Fácil de interpretar e ajustar, com apenas um parâmetro principal (número de vizinhos, K).
 
-#### Como o KNN funciona?
+#### Como o KNN funciona
 
 - O modelo armazena todos os dados de treinamento.
 - Para prever a classe de uma nova amostra, calcula a distância entre ela e todas as instâncias conhecidas (normalmente distância euclidiana).
@@ -618,7 +618,8 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ---
 
-### Avaliação do Modelo KNN (K=3)
+### Avaliação do Modelo KNN 
+(K=3)
 
 - **Acurácia no conjunto final**: **0.89**
 
