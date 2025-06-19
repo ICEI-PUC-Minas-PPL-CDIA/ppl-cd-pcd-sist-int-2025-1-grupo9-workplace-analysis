@@ -8,7 +8,6 @@ O objetivo deste projeto é desenvolver um sistema inteligente de análise e mon
 *  Gabriel Lucas de Carvalho Santos
 * João Lucas Garcia Oliveira
 * Lucca Favilla Campos de Paula
-* Pedro Veloso Discacciati Neves
   
 ## Professor 
 
