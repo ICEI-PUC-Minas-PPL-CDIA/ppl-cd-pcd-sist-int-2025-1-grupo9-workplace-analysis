@@ -11,8 +11,9 @@
 
 **Gabriel Lucas de Carvalho Santos, gabriel.santos1524775@sga.pucminas.br**
 
-
 ---
+
+
 
 Professores:
 
@@ -22,11 +23,15 @@ Professores:
 
 ---
 
+
+
 _Curso de Ciência de Dados, Unidade Praça da Liberdade_
 
 _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil_
 
 ---
+
+
 
 ##	Resumo
 
@@ -37,6 +42,8 @@ A solução integra informações de fontes como a PNAD Contínua (IBGE), Rais (
 Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades relacionadas ao etarismo no ambiente laboral, mas também oferece ferramentas práticas para transformar esses espaços, utilizando análise de dados e inteligência artificial para promover equidade e inclusão de forma eficiente e embasada.
 
 ---
+
+
 
 ## Sumário
 
@@ -103,6 +110,7 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
   - [Conclusões Comparativas](#conclusões-comparativas)
 
 
+
 ##	Introdução
 
 O etarismo, ou discriminação etária, se consolida como um desafio persistente no mercado de trabalho, e o setor de dados não se exime desse problema.
@@ -115,7 +123,6 @@ Além disso, a rápida evolução das ferramentas e linguagens de programação 
 
 
 
- 
 ##    Contextualização
 
 O "State of Data 2023" representa a maior base de dados dedicada aos especialistas em ciência de dados no Brasil, permitindo a análise da atual situação da área. Nesse sentido, esta é a quarta edição do panorama, na qual mais de 5.200 profissionais foram entrevistados. Portanto, diversos temas podem ser estudados por meio dessa base, incluindo questões raciais, inclusão de pessoas com deficiência, integração da comunidade LGBT e o tema selecionado para este projeto: o etarismo.
@@ -125,6 +132,7 @@ O etarismo no mercado de trabalho é um fenômeno global, mas assume contornos p
 De acordo com o IBGE (2024), os trabalhadores acima de 55 anos representam mais de 22% da população economicamente ativa, mas enfrentam dificuldades para se recolocar no mercado após demissões ou transições de carreira. Nesse sentido, o número de trabalhadores nessa faixa etária com carteira assinada está em queda desde 2022, mesmo com o aumento na oferta de empregos. Além disso, estudos mostram que trabalhadores seniores frequentemente recebem salários menores e têm menos oportunidades de ascensão profissional em comparação com colegas mais jovens.
 
 A aplicação de tecnologias como a inteligência artificial e a análise de dados pode oferecer insights valiosos para compreender as barreiras enfrentadas por trabalhadores seniores e propor soluções baseadas em evidências. O projeto Brazilian Workplace Analysis utiliza dados de fontes confiáveis, como a PNAD Contínua, Rais, IPEA e IBGE, para mapear padrões de desigualdade e buscar informações que ajudem a solucionar a desvalorização desses profissionais. Dessa forma, é possível implementar ações práticas para promover a inclusão desses trabalhadores no mercado de trabalho no Brasil.
+
 
 
 ##    Problema
@@ -137,7 +145,6 @@ Os esteriótipos como baixa produtividade, vulnerabilidade de saúde e dificulda
 
 
 
-
 ##    Objetivo geral
 
 Desenvolver um sistema inteligente que examine a influência do etarismo no mercado de dados, averiguando a forma de como a discriminação impacta na contratação, permanência e desenvolvimento dos profissionais mais experientes.
@@ -146,7 +153,6 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 
 
 ###    Objetivos específicos
-  
 
 - **Mapear os principais desafios** enfrentados pelos profissionais seniores, incluindo:  
   - Dificuldades na atualização tecnológica.  
@@ -164,7 +170,6 @@ Ademais o estudo busca compreender as causas e consequências referentes a este 
 - **Fomentar um debate** amplo sobre políticas de inclusão.  
 
 - **Criar programas de incentivo** à adoção de medidas que promovam a igualdade de oportunidades, independentemente da faixa etária.  
-
 
 
 
@@ -250,6 +255,7 @@ O IPEA disponibiliza diversas bases de dados e indicadores socioeconômicos, com
 | Militar ou funcionário público estatutário        | Indica a o número de trabalhadores em funções públicas     | Numérico     |
 | Conta própria                                     | Indica o número de trabalhadores autônomo                  | Numérico     |
 | Empregador                                        | Indica o número de trabalhadores em posição de empregador  | Numérico     |
+
 
 
 ## Dicionário de Dados Estados do Brasil 
@@ -408,6 +414,7 @@ Este relatório apresenta uma análise descritiva de primeira ordem sobre três 
 ---
 
 
+
 ## Preparação dos dados
 
 A preparação dos dados consiste dos seguintes passos:
@@ -418,6 +425,8 @@ A preparação dos dados consiste dos seguintes passos:
 > - Conversão de dados: p. ex. numérico para categórico, categórico para binário, etc.
 
 ---
+
+
 
 ## Modelo Random Forest
 
@@ -546,6 +555,8 @@ Essas variáveis demonstram o papel da cultura organizacional, valorização int
 
 ---
 
+
+
 ## Modelo K-Nearest Neighbors
 
 ### Pergunta orientada a dados
@@ -585,9 +596,6 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 7. Como o modelo KNN baseia suas decisões em cálculos de distância, foi necessário padronizar as variáveis numéricas para que todas tivessem média zero e desvio padrão igual a um. Sem essa etapa, variáveis com valores mais altos teriam influência desproporcional na decisão do algoritmo.
 8. Foram testados diferentes valores para o parâmetro K, que define o número de vizinhos mais próximos a serem considerados na classificação. Os valores de K de 1 a 5 foram avaliados, comparando os resultados de acurácia tanto no conjunto de treinamento quanto no conjunto final. O melhor desempenho geral foi obtido com K=3, que apresentou equilíbrio entre precisão e generalização.
 9. Com o modelo treinado, ele foi aplicado ao conjunto final para avaliar sua capacidade de prever corretamente os casos de etarismo. As métricas utilizadas incluíram acurácia, precisão, recall, F1-score e matriz de confusão. Essa análise permitiu compreender tanto a qualidade geral do modelo quanto os tipos de erros cometidos (falsos positivos e falsos negativos), fornecendo subsídios para interpretações mais aprofundadas sobre os fatores associados à discriminação por idade.
-
-
-
 
 ---
 
@@ -680,6 +688,8 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 ---
 
+
+
 ## COMPARAÇÃO GERAL
 
 | Aspecto | Random Forest | KNN (K=3) |
@@ -753,3 +763,39 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 ---
 
+
+
+## Conclusão
+
+### Lorem Ipsum
+
+---
+
+
+
+## Referências Bibliográficas
+
+[1] Kaggle: *State of Data Brazil-2023*, o mapeamento mais completo do mercado brasileiro de dados [Data Hackers + Bain]. Disponível em: [https://www.kaggle.com/datasets/datahackers/state-of-data-brazil-2023/data](https://www.kaggle.com/datasets/datahackers/state-of-data-brazil-2023/data). Acesso em: 05 mar. 2025.
+
+[2] IBGE. *Síntese de Indicadores Sociais – Uma análise das condições de vida da população brasileira*. Rio de Janeiro: Instituto Brasileiro de Geografia e Estatística, 2025. Disponível em: [https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html). Acesso em: 20 mar. 2025.
+
+[3] IPEA. *Ipeadata – Conjunto de Microdados*. Brasília: Instituto de Pesquisa Econômica Aplicada, 2025. Disponível em: [https://www.ipeadata.gov.br/Default.aspx](https://www.ipeadata.gov.br/Default.aspx). Acesso em: 20 mar. 2025.
+
+[4] OpenAI. *ChatGPT (GPT-4) - Inteligência artificial generativa*. São Francisco: OpenAI, 2023. Disponível em: [https://chat.openai.com/](https://chat.openai.com/). Acesso em: 05 mar. 2025.
+
+---
+
+
+
+## Apêndice
+
+- [Imagem da Análise Exploratória de Dados](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/tree/main/assets/results)
+- [Ilustração dos Modelos]
+  - [Ilustração Random Forest]()
+  - [Ilustração KNN]()
+- [Matrizes de Confusão dos Modelos]
+  - [Matriz de Confusão Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/confusion%20matrix%20preview%20model%201%20(image).md)
+  - [Matriz de Confusão Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/2nd%20model/confusion%20matrix%20preview%20model%202%20(image).md)
+- [Link do Vídeo]()
+
+---
