@@ -7,8 +7,6 @@
 
 **Davi Miguel Almeida da Silva, davi.miguel@sga.pucminas.br**
 
-**Pedro Veloso Discacciati Neves, pedro.discacciati@sga.pucminas.br**
-
 **João Lucas Garcia Oliveira, joao.oliveira.1387367@sga.pucminas.br**
 
 **Gabriel Lucas de Carvalho Santos, gabriel.santos1524775@sga.pucminas.br**
