@@ -455,8 +455,9 @@ Este projeto tem como objetivo prever se um profissional sofreu etarismo (discri
 5. Devido ao desequilíbrio entre os casos de profissionais que relataram etarismo e os que não relataram, aplicou-se o método SMOTE, que gera amostras sintéticas para equilibrar as classes e evitar o viés do modelo.  
 6. A base balanceada foi então dividida em dois subconjuntos: 70% dos dados foram destinados ao treinamento do modelo, e os 30% restantes, ao final, garantindo uma avaliação justa do desempenho.  
 7. O modelo escolhido para a etapa de treinamento foi o RandomForestClassifier, que combina várias árvores de decisão para obter melhores resultados em problemas com múltiplas variáveis.  
-8. O desempenho do modelo foi avaliado com métricas como acurácia, precisão, recall, F1-score e matriz de confusão, possibilitando uma análise quantitativa da sua eficácia em classificar corretamente os casos de etarismo.  
-9. Por fim, foram analisadas as árvores que compõem o modelo e a importância atribuída a cada variável, permitindo interpretar quais fatores mais influenciaram nas decisões do algoritmo e fornecendo insights sobre os elementos mais associados à discriminação etária no ambiente de trabalho.  
+8. A etapa de otimização dos hiperparâmetros foi realizada utilizando o GridSearchCV, que testou combinações de parâmetros para encontrar a configuração que oferecesse o melhor desempenho do modelo.  
+9. O desempenho do modelo foi avaliado com métricas como acurácia, precisão, recall, F1-score e matriz de confusão, possibilitando uma análise quantitativa da sua eficácia em classificar corretamente os casos de etarismo.  
+10. Por fim, foram analisadas as árvores que compõem o modelo e a importância atribuída a cada variável, permitindo interpretar quais fatores mais influenciaram nas decisões do algoritmo e fornecendo insights sobre os elementos mais associados à discriminação etária no ambiente de trabalho.  
 
 ---
 
@@ -470,20 +471,21 @@ O objetivo do modelo é prever se um profissional sofreu etarismo, com base em v
 
 Para avaliar a capacidade de generalização do modelo, comparamos a acurácia nos dados de treinamento com os dados finais. Essa análise permite verificar possíveis problemas de overfitting ou underfitting.
 
-A acurácia do modelo Random Forest nos conjuntos de treinamento foi: 0,81 e no modelo final: 0,72. Isso indica que o modelo teve um bom desempenho nos dados em que foi treinado, porém utilizou dados falsos em um primeiro momento. Isso sugere que o modelo pode ter aprendido padrões incorretos ou ruído desses dados — ou seja, ele se adaptou demais ao conjunto de treino, inclusive aos erros. Isso é um sinal clássico de overfitting, que posteriormente foi corrigido para o modelo final.
+A acurácia do modelo Random Forest nos conjuntos de treinamento foi: 0,80 e no modelo final: 0,77. Isso indica que o modelo teve bom desempenho nos dados em que foi treinado, com diferença controlada entre treino e teste. O modelo demonstrou capacidade de generalizar sem se ajustar excessivamente aos dados de treinamento.
 
-![image](https://github.com/user-attachments/assets/59ebc3ab-cfc5-4552-8d17-974c15fbfd22)
+![image](https://github.com/user-attachments/assets/f8f464e1-077d-4018-a916-26104a39d3b3)
 
-[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo%201/First%20Model%20Training%20x%20Final%20(Code).py)
+
+[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo1/FirstModelTrainingxFinal(Code).py)
 
 ---
 
 ### Avaliação do Modelo Random Forest
 
-**Acurácia no treinamento:** 0.81  
-**Acurácia final:** 0.72  
+**Acurácia no treinamento:** 0.80  
+**Acurácia final:** 0.77  
 
-Essa diferença indica um leve overfitting, mas o modelo ainda apresenta boa generalização.
+Essa diferença indica uma generalização saudável, sem indícios fortes de overfitting.
 
 ---
 
@@ -491,32 +493,32 @@ Essa diferença indica um leve overfitting, mas o modelo ainda apresenta boa gen
 
 A análise dos valores de acurácia obtidos permite as seguintes conclusões:
 
-· Acurácia no treinamento: 0.81  
-· Acurácia final: 0.72  
-· A diferença entre treino e o modelo final sugere um leve overfitting, mas o desempenho geral ainda é aceitável.  
-· O modelo tem boa capacidade de identificar etarismo (recall de 0.80), com maior dificuldade na identificação de casos negativos (sem etarismo).
+· Acurácia no treinamento: 0.80  
+· Acurácia final: 0.77  
+· A diferença entre treino e o modelo final está dentro do esperado, indicando boa generalização.  
+· O modelo tem desempenho equilibrado na identificação tanto de casos de etarismo quanto de não etarismo, com F1-score médio de 0.77.
 
 ---
 
 ### Resultados obtidos
 
-**Acurácia final:** 0.72  
+**Acurácia final:** 0.77  
 
 #### Relatório de classificação
 
 | Classe             | Precisão | Recall | F1-score | Suporte |
 |--------------------|----------|--------|----------|---------|
-| Sem Etarismo (0)   | 0.76     | 0.65   | 0.70     | 945     |
-| Com Etarismo (1)   | 0.70     | 0.80   | 0.74     | 966     |
-| Média Macro        | 0.73     | 0.72   | 0.72     | 1911    |
-| Média Ponderada    | 0.73     | 0.72   | 0.72     | 1911    |
+| Sem Etarismo (0)   | 0.77     | 0.75   | 0.76     | 945     |
+| Com Etarismo (1)   | 0.76     | 0.79   | 0.77     | 966     |
+| Média Macro        | 0.77     | 0.77   | 0.77     | 1911    |
+| Média Ponderada    | 0.77     | 0.77   | 0.77     | 1911    |
 
 #### Interpretação da matriz:
 
-· 610 acertos em identificar corretamente casos sem etarismo.  
-· 772 acertos na identificação de casos com etarismo.  
-· 335 falsos positivos: pessoas sem etarismo classificadas incorretamente como vítimas.  
-· 194 falsos negativos: pessoas com etarismo não reconhecidas pelo modelo.  
+· 708 acertos em identificar corretamente casos sem etarismo.  
+· 759 acertos na identificação de casos com etarismo.  
+· 237 falsos positivos: pessoas sem etarismo classificadas incorretamente como vítimas.  
+· 207 falsos negativos: pessoas com etarismo não reconhecidas pelo modelo.  
 
 ---
 
