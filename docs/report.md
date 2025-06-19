@@ -476,7 +476,9 @@ A acurácia do modelo Random Forest nos conjuntos de treinamento foi: 0,80 e no 
 ![image](https://github.com/user-attachments/assets/f8f464e1-077d-4018-a916-26104a39d3b3)
 
 
-[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo1/FirstModelTrainingxFinal(Code).py)
+[Código do Modelo 1](https://github.com/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/main/src/Modelo%201/First%20Model%20(Code).py)
+
+[Código da comparação Modelo 1](https://github.com/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/main/src/Modelo1/First%20Model%20Training%20x%20Final%20(Code).py)
 
 ---
 
@@ -614,7 +616,10 @@ Essa diferença mínima indica que o modelo generalizou bem, sem sinais relevant
 
 ![image](https://github.com/user-attachments/assets/13230f6a-69ef-4553-ae46-603d8634c93f)
 
-[Código do Modelo](ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/src/Modelo%202/Second%20Model%20Training%20x%20Final%20(Code).py)
+
+[Código do Modelo 2](https://github.com/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/src/Modelo%202/Second%20model%20(code).py)
+
+[Código da comparação Modelo 2](https://github.com/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/src/Modelo%202/Second%20Model%20Training%20x%20Final%20(Code).py)
 
 ---
 
