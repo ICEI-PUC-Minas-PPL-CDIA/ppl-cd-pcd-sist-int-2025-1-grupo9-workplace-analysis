@@ -2,24 +2,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from google.colab import files
-uploaded = files.upload()
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 from imblearn.over_sampling import SMOTE
 
-# Leitura da base
-df = pd.read_excel("base_unificada_limpa.xlsx")  # mesmo nome de arquivo usado no modelo
+# Leitura da base de dados
+df = pd.read_csv("base_unificada_limpa.csv")
 
-# Criação do grupo etário e variável alvo
+# Criação das variáveis
 df['grupo_etário'] = df['idade'].apply(lambda x: '50+' if x >= 50 else '<50')
 df['etarismo'] = df['experiência_prejudicada'].apply(
     lambda x: 1 if isinstance(x, str) and 'idade' in x.lower() else 0
 )
 
-# Features usadas no modelo
+# Seleção de features
 features = [
     'grupo_etário',
     'nível_de_escolaridade',
@@ -39,35 +37,53 @@ df_model = df[features + ['etarismo']].dropna()
 X = df_model[features]
 y = df_model['etarismo']
 
-# Codificar variáveis categóricas
 for col in X.select_dtypes(include='object').columns:
     X[col] = LabelEncoder().fit_transform(X[col])
 
-# Aplicar SMOTE para balanceamento
+# Balanceamento com SMOTE
 X_bal, y_bal = SMOTE(random_state=42).fit_resample(X, y)
 
-# Separar treino/teste
+# Divisão treino/teste (mesma divisão do modelo principal)
 X_train, X_test, y_train, y_test = train_test_split(X_bal, y_bal, test_size=0.3, random_state=42)
 
-# Modelo Random Forest com os mesmos parâmetros
-rf = RandomForestClassifier(n_estimators=200, max_depth=12, min_samples_split=5, random_state=42)
-rf.fit(X_train, y_train)
-y_pred = rf.predict(X_test)
+# Otimização com GridSearchCV (se já executado anteriormente)
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [8, 10, 12, None],
+    'min_samples_split': [2, 5, 10]
+}
 
-# Matriz de confusão
+grid_search = GridSearchCV(
+    estimator=RandomForestClassifier(random_state=42),
+    param_grid=param_grid,
+    cv=5,
+    scoring='accuracy',
+    n_jobs=-1,
+    verbose=1
+)
+
+grid_search.fit(X_train, y_train)
+best_rf = grid_search.best_estimator_
+
+# Previsões com o modelo otimizado
+y_pred = best_rf.predict(X_test)
+
+# Avaliação
+acc = accuracy_score(y_test, y_pred)
+print(f"Acurácia: {acc:.4f}")
+
+print("\nRelatório de Classificação:")
+print(classification_report(y_test, y_pred))
+
 conf_matrix = confusion_matrix(y_test, y_pred)
 conf_df = pd.DataFrame(conf_matrix,
                        index=["Real Sem Etarismo", "Real Com Etarismo"],
                        columns=["Previsto Sem Etarismo", "Previsto Com Etarismo"])
 
-# Impressões
-print(f"Acurácia: {accuracy_score(y_test, y_pred):.4f}")
-print("\nRelatório de Classificação:")
-print(classification_report(y_test, y_pred))
 print("\nMatriz de Confusão:")
 print(conf_df)
 
-# Visualização gráfica da matriz
+# Visualização da Matriz
 plt.figure(figsize=(6, 4))
 sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
             xticklabels=["Sem Etarismo", "Com Etarismo"],
