@@ -790,12 +790,11 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 ## Apêndice
 
 - [Imagem da Análise Exploratória de Dados](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/tree/main/assets/results)
-- [Ilustração dos Modelos]
-  - [Ilustração Random Forest]()
-  - [Ilustração KNN]()
-- [Matrizes de Confusão dos Modelos]
-  - [Matriz de Confusão Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/confusion%20matrix%20preview%20model%201%20(image).md)
-  - [Matriz de Confusão Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/2nd%20model/confusion%20matrix%20preview%20model%202%20(image).md)
+- [Resultados do Modelo 1]
+  - [Árvores do Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/Results%20of%20First%20Model%20(Image).md)
+  - [Matriz de Confusão Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/Confusion%20Matrix%Model%201%20(Image).md)
+- [Resultados do Modelo 2]
+  - [Matriz de Confusão Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/2nd%20model/Confusion%20Matrix%20Model%202%20(Image).md)
 - [Link do Vídeo]()
 
 ---
