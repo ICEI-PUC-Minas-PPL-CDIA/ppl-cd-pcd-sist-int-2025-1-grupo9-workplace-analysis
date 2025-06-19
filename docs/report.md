@@ -687,7 +687,7 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 | Tipo de Modelo | Ensemble (árvores de decisão) | Baseado em instâncias (distância) |
 | Justificativa da escolha | Robusto, interpreta variáveis, evita overfitting | Simples, eficaz com dados padronizados |
 | Pré-processamento | Codificação + SMOTE | Codificação + padronização + SMOTE |
-| Capacidade de Generalização | Moderada (diferença de 9 p.p. entre treino e teste) | Alta (diferença de 2 p.p.) |
+| Capacidade de Generalização | Moderada (diferença de 4 p.p. entre treino e teste) | Alta (diferença de 2 p.p.) |
 | Overfitting | Leve, detectado e corrigido | Praticamente inexistente |
 | Importância das Variáveis | Fornecida diretamente | Não fornecida diretamente (implícita na escolha) |
 | Complexidade Computacional | Alta (várias árvores) | Baixa a média (simples, mas exige muitos cálculos de distância) |
@@ -700,18 +700,18 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 | Métrica | Random Forest | KNN (K=3) |
 |----------------|----------------|-----------|
 | Acurácia Treino| 0.81 | 0.91 |
-| Acurácia Final | 0.72 | 0.89 |
-| Precisão (0) | 0.76 | 0.83 |
-| Precisão (1) | 0.70 | 1.00 |
-| Recall (0) | 0.65 | 1.00 |
-| Recall (1) | 0.80 | 0.74 |
-| F1-score (0) | 0.70 | 0.91 |
-| F1-score (1) | 0.74 | 0.85 |
+| Acurácia Final | 0.77 | 0.89 |
+| Precisão (0) | 0.77 | 0.83 |
+| Precisão (1) | 0.76 | 1.00 |
+| Recall (0) | 0.75 | 1.00 |
+| Recall (1) | 0.79 | 0.74 |
+| F1-score (0) | 0.76 | 0.91 |
+| F1-score (1) | 0.77 | 0.85 |
 
 ### Interpretação
 
-- O KNN superou o Random Forest em acurácia geral (0.89 vs 0.72).
-- O Random Forest foi melhor em recall da classe minoritária (etarismo) (0.80 vs 0.74), mostrando mais sensibilidade aos casos de discriminação.
+- O KNN superou o Random Forest em acurácia geral (0.89 vs 0.77).
+- O Random Forest foi melhor em recall da classe minoritária (etarismo) (0.79 vs 0.74), mostrando mais sensibilidade aos casos de discriminação.
 - O KNN teve F1-scores mais equilibrados e precisos, especialmente pela ausência de falsos positivos.
 
 ---
@@ -730,8 +730,8 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 | Tipo de erro | Random Forest | KNN (K=3) |
 |------------------|----------------|-----------|
-| Falsos positivos | 335 | 0 |
-| Falsos negativos | 194 | 7 |
+| Falsos positivos | 237 | 0 |
+| Falsos negativos | 207 | 7 |
 
 ### Análise
 
@@ -745,9 +745,11 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 | Critério | Vencedor / Destaque |
 |-------------------------------------------|------------------------------------------------------|
 | Acurácia Geral | KNN (0.89) |
-| Sensibilidade a Etarismo (Recall 1) | Random Forest (0.80) |
+| Sensibilidade a Etarismo (Recall 1) | Random Forest (0.79) |
 | Balanceamento entre Precisão e Recall | KNN (F1 médio mais alto) |
 | Explicabilidade e Insight | Random Forest (importância de variáveis interpretável) |
 | Simplicidade de Implementação | KNN |
 | Robustez contra ruído/dados sintéticos | KNN (menos afetado por overfitting) |
+
+---
 
