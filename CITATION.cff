@@ -4,27 +4,27 @@ title: Repositório modelo para a disciplina de Projeto em Ciência de Dados I -
 authors:
   - given-names: Lucca
     family-names: Favilla Campos de Paula
-    affiliation: Puc Minas
+    affiliation: PUC Minas
   - given-names: Caio
     family-names: Soares Fernandes
-    affiliation: Puc Minas
+    affiliation: PUC Minas
   - given-names: Davi
     family-names: Miguel Almeida da Silva
-    affiliation: Puc Minas
-  - given-names: Gabriel 
+    affiliation: PUC Minas
+  - given-names: Gabriel
     family-names: Lucas de Carvalho Santos
-    affiliation: Puc Minas
-  - given-names: João 
-    family-names: Lucas Garcia Oliveira
-    affiliation: Puc Minas
-  - name: Puc Minas
-    city: Belo Horizinte
+    affiliation: PUC Minas
+  - given-names: João
+    family-names: Lucas Garcia Oliveira
+    affiliation: PUC Minas
+  - name: PUC Minas
+    city: Belo Horizonte
     country: BR
 keywords:
   - Ciência de Dados
   - Jupyter Notebooks
   - Aprendizado de Máquina
-repository-code:https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis
+repository-code: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-30
