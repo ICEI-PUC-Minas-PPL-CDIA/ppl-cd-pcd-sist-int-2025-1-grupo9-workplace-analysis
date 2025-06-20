@@ -775,6 +775,12 @@ A análise das variáveis mais influentes em ambos os modelos revelou um padrão
 
 Além do desempenho técnico dos modelos, os resultados mostram que aproximadamente 43,5% dos profissionais seniores da base analisada relataram experiências de etarismo. Extrapolando para o cenário nacional, mais de 5,8 milhões de brasileiros com mais de 50 anos podem estar enfrentando desvantagens profissionais por conta da idade — uma estatística alarmante, especialmente se considerarmos que o setor de tecnologia tende a ser mais progressista que outros setores do mercado.
 
+Do ponto de vista da análise de riscos, o estudo revela implicações críticas tanto para as empresas quanto para o mercado de trabalho em geral. Ignorar o etarismo representa um risco reputacional, social e econômico. Organizações que perpetuam práticas discriminatórias podem sofrer perda de talentos experientes, aumento de rotatividade e queda na produtividade. Além disso, há risco jurídico, especialmente em contextos onde ações afirmativas ou leis antidiscriminatórias são mais rigorosas. Do lado técnico, o uso de algoritmos também exige cautela: um modelo com alto recall pode cometer falsos positivos e gerar decisões injustas; um modelo com baixo recall pode invisibilizar vítimas reais. Por isso, o uso responsável da inteligência artificial, com revisão humana e validação ética, é indispensável.
+
+Diante disso, o projeto demonstra que modelos de inteligência artificial podem e devem ser usados como ferramentas de diagnóstico social, fornecendo suporte objetivo à formulação de políticas públicas, práticas de RH e ações institucionais mais justas. Tanto o Random Forest quanto o KNN mostraram ser modelos viáveis e úteis nesse contexto, e sua aplicação pode servir de base para auditorias automatizadas, sistemas de triagem de processos seletivos ou ferramentas de monitoramento de clima organizacional, com foco em equidade etária.
+
+Portanto, o estudo não apenas comprova a existência do etarismo no mercado de dados, mas também oferece caminhos práticos, baseados em dados, para combatê-lo e promover um ambiente profissional mais inclusivo e igualitário.
+
 ### Lorem Ipsum
 
 ---
