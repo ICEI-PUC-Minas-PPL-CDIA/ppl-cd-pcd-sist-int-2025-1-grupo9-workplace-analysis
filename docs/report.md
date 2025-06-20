@@ -781,8 +781,6 @@ Diante disso, o projeto demonstra que modelos de inteligência artificial podem 
 
 Portanto, o estudo não apenas comprova a existência do etarismo no mercado de dados, mas também oferece caminhos práticos, baseados em dados, para combatê-lo e promover um ambiente profissional mais inclusivo e igualitário.
 
-### Lorem Ipsum
-
 ---
 
 
