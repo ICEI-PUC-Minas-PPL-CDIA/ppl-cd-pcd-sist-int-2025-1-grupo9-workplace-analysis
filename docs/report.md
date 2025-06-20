@@ -767,6 +767,14 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 ## Conclusão
 
+A pesquisa conduzida pelo projeto Brazilian Workplace Analysis evidencia, de forma quantitativa e qualitativa, a existência e os impactos do etarismo no mercado de dados brasileiro. Utilizando duas abordagens de aprendizado de máquina — Random Forest e K-Nearest Neighbors (KNN) — foi possível diagnosticar padrões discriminatórios relacionados à idade, especialmente entre profissionais com 50 anos ou mais.
+
+O modelo Random Forest mostrou-se eficaz na identificação de casos de etarismo, com uma acurácia final de 77% e destaque para sua capacidade de sensibilidade à classe minoritária, ou seja, à detecção de trabalhadores que relataram discriminação por idade. Por outro lado, o modelo KNN (K=3) obteve uma acurácia superior, de 89%, e demonstrou grande equilíbrio entre precisão e recall, com especial destaque para a ausência de falsos positivos, embora tenha apresentado mais falsos negativos.
+
+A análise das variáveis mais influentes em ambos os modelos revelou um padrão comum: a cultura organizacional tem peso significativo na percepção de etarismo. Elementos como satisfação profissional, políticas de diversidade etária, adequação às novas tecnologias e barreiras para recolocação foram recorrentes, mostrando que o preconceito etário vai além da idade em si e se manifesta no ambiente e nas práticas institucionais.
+
+Além do desempenho técnico dos modelos, os resultados mostram que aproximadamente 43,5% dos profissionais seniores da base analisada relataram experiências de etarismo. Extrapolando para o cenário nacional, mais de 5,8 milhões de brasileiros com mais de 50 anos podem estar enfrentando desvantagens profissionais por conta da idade — uma estatística alarmante, especialmente se considerarmos que o setor de tecnologia tende a ser mais progressista que outros setores do mercado.
+
 ### Lorem Ipsum
 
 ---
