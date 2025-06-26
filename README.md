@@ -32,3 +32,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 * 1.4.0
     * Report.md completo e versão final do trabalho
 
+## Referências Bibliográficas
+
+Presentes no final do report.md
+[Report.md](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/docs/report.md)
