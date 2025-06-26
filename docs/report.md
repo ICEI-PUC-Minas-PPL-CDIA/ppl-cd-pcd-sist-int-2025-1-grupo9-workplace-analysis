@@ -804,11 +804,11 @@ Portanto, o estudo não apenas comprova a existência do etarismo no mercado de 
 ## Apêndice
 
 - [Imagem da Análise Exploratória de Dados](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/tree/main/assets/results)
-- [Resultados do Modelo 1]
+- Resultados do Modelo 1
   - [Árvores do Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/Results%20of%20First%20Model%20(Image).md)
   - [Matriz de Confusão Modelo 1](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/1st%20model/Confusion%20Matrix%20Model%201%20(Image).md)
-- [Resultados do Modelo 2]
+- Resultados do Modelo 2
   - [Matriz de Confusão Modelo 2](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-grupo9-workplace-analysis/blob/main/assets/models/2nd%20model/Confusion%20Matrix%20Model%202%20(Image).md)
-- [Link do Vídeo]()
+- [Link do Vídeo](https://drive.google.com/file/d/1lxioP3Dar3f3eZdEPzabN9gLIB_Fi4yq/view?usp=sharing)
 
 ---
