@@ -108,7 +108,9 @@ Em resumo, o Brazilian Workplace Analysis não apenas mapeia as desigualdades re
   - [Erros Cometidos](#erros-cometidos)
   - [Análise](#análise)
   - [Conclusões Comparativas](#conclusões-comparativas)
-
+- [Conclusão Final](#Conclusão-Final)
+- [Referências Bibliográficas](#Referências-Bibliográficas)
+- [Apêndice](#Apêndice)
 
 
 ##	Introdução
@@ -765,7 +767,7 @@ Esses fatores reforçam a influência do ambiente organizacional e das política
 
 
 
-## Conclusão
+## Conclusão Final
 
 A pesquisa realizada pelo projeto Brazilian Workplace Analysis evidencia, de forma quantitativa e qualitativa, a existência e os impactos do etarismo no mercado de dados brasileiro. Utilizando duas abordagens de aprendizado de máquina — Random Forest e K-Nearest Neighbors (KNN) — foi possível diagnosticar padrões discriminatórios relacionados à idade, especialmente entre profissionais com 50 anos ou mais.
 
