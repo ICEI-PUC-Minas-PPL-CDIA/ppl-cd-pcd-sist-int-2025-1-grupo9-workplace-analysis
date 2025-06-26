@@ -21,10 +21,14 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 ## Histórico de versões
 
-* 0.1.1
-    * CHANGE: Atualização das documentacoes. Código permaneceu inalterado.
-* 0.1.0
-    * Indução do primeiro modelo do agente inteligente.
-* 0.0.1
-    * Trabalhando na preparação dos dados.
+* 1.0.1
+    * CHANGE: Mudança no tema do trabalho.
+* 1.1.0
+    * Dicionário de dados completo e base de dados unificada
+* 1.2.0
+    * Modelo 1 completo
+* 1.3.0
+    * Modelo 2 completo
+* 1.4.0
+    * Report.md completo e versão final do trabalho
 
